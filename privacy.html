@@ -48,6 +48,23 @@
       color: #00ffff;
       text-decoration: underline;
     }
+
+    .back-button {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 20px;
+      background-color: #00ffff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #00dddd;
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
@@ -98,6 +115,9 @@
       <p><strong>10. Обновления:</strong><br>
       Мы можем время от времени вносить изменения в политику. Последняя версия всегда будет доступна на этой странице.</p>
 
+      <p style="text-align:center">
+        <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Назад на главную</a>
+      </p>
     </div>
   </div>
 </body>
