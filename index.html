@@ -1,129 +1,115 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Moreman Games</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    :root {
-      --primary: #6C63FF;
-      --bg: #F9F9FB;
-      --text: #222;
-      --card: #fff;
-      --shadow: rgba(0, 0, 0, 0.1);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: var(--bg);
-      color: var(--text);
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('images/background.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: rgba(20, 20, 20, 0.75);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #ffa500;
+    }
+
+    p {
       line-height: 1.6;
     }
 
-    header {
-      background: var(--primary);
-      color: white;
-      padding: 2rem 1rem;
+    nav {
       text-align: center;
-      box-shadow: 0 2px 10px var(--shadow);
-    }
-
-    header h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
+      margin: 20px 0;
     }
 
     nav a {
-      color: #e0e0ff;
-      margin: 0 1rem;
+      margin: 0 15px;
       text-decoration: none;
+      color: #00ffff;
       font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: white;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
     }
 
     .game {
-      background: var(--card);
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px var(--shadow);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .game:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px var(--shadow);
-    }
-
-    .game h3 {
-      color: var(--primary);
-      margin-bottom: 0.5rem;
-    }
-
-    .game a {
-      display: inline-block;
-      margin-top: 0.5rem;
-      color: var(--primary);
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .game a:hover {
-      text-decoration: underline;
+      margin-top: 30px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
     }
 
     footer {
       text-align: center;
+      margin-top: 40px;
       font-size: 0.9em;
-      color: #999;
-      padding: 2rem 1rem;
+      color: #cccccc;
+    }
+
+    footer a {
+      color: #cccccc;
+      margin: 0 10px;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Moreman Games</h1>
-    <nav>
-      <a href="privacy.html">Конфиденциальность</a>
-      <a href="terms-game1.html">TileShift</a>
-      <a href="terms-game2.html">Другая игра</a>
-    </nav>
-  </header>
+  <div class="overlay">
+    <div class="container">
+      <h1>Moreman Games</h1>
+      <nav>
+        <a href="privacy.html">Конфиденциальность</a>
+        <a href="terms-game1.html">Условия Игра 1</a>
+        <a href="terms-game2.html">Условия Игра 2</a>
+      </nav>
 
-  <main>
-    <h2 style="margin-bottom: 1rem;">Наши игры</h2>
+      <h2>Наши игры</h2>
 
-    <div class="game">
-      <h3>🐾 TileShift</h3>
-      <p>Кошачий пазл из снов! Буся попадает в миры древнего Китая, ледников и пирамид, чтобы спасти игрушку.</p>
-      <a href="terms-game1.html">Условия использования</a>
+      <div class="game">
+        <h3>Игра 1</h3>
+        <p>Захватывающее приключение с Бусей. Исследуй мир, проходи уровни и читай комиксы!</p>
+        <a href="terms-game1.html">Условия использования</a>
+      </div>
+
+      <div class="game">
+        <h3>Игра 2</h3>
+        <p>Новая аркада от Moreman Games — сразись с друзьями и установи рекорд!</p>
+        <a href="terms-game2.html">Условия использования</a>
+      </div>
+
+      <footer>
+        <p>
+          <a href="privacy.html">Политика конфиденциальности</a> |
+          <a href="terms-game1.html">Правила Игра 1</a> |
+          <a href="terms-game2.html">Правила Игра 2</a>
+        </p>
+        <p>© 2025 Moreman Games</p>
+      </footer>
     </div>
-
-    <div class="game">
-      <h3>🚀 Следующая игра</h3>
-      <p>Новая аркада на подходе! Следите за новостями — и готовьтесь к приключениям.</p>
-      <a href="terms-game2.html">Условия использования</a>
-    </div>
-  </main>
-
-  <footer>
-    © 2025 Moreman Games — Все права защищены.
-  </footer>
+  </div>
 </body>
 </html>
