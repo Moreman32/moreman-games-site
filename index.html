@@ -5,40 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Moreman Games</title>
   <style>
-    body {
+    :root {
+      --primary: #6C63FF;
+      --bg: #F9F9FB;
+      --text: #222;
+      --card: #fff;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    body {
       font-family: 'Segoe UI', sans-serif;
-      background: #f4f4f4;
-      color: #222;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
     }
+
     header {
-      background: #5C6BC0;
+      background: var(--primary);
       color: white;
-      padding: 1em;
+      padding: 2rem 1rem;
       text-align: center;
+      box-shadow: 0 2px 10px var(--shadow);
     }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
     nav a {
+      color: #e0e0ff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
       color: white;
-      margin: 0 1em;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .game {
+      background: var(--card);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px var(--shadow);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .game:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px var(--shadow);
+    }
+
+    .game h3 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .game a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: var(--primary);
+      font-weight: bold;
       text-decoration: none;
     }
-    main {
-      max-width: 800px;
-      margin: auto;
-      padding: 2em;
+
+    .game a:hover {
+      text-decoration: underline;
     }
-    .game {
-      background: white;
-      margin-bottom: 1em;
-      padding: 1em;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
+
     footer {
       text-align: center;
       font-size: 0.9em;
-      color: #888;
-      padding: 2em 1em;
+      color: #999;
+      padding: 2rem 1rem;
     }
   </style>
 </head>
@@ -47,24 +101,24 @@
     <h1>Moreman Games</h1>
     <nav>
       <a href="privacy.html">Конфиденциальность</a>
-      <a href="terms-game1.html">Условия Game 1</a>
-      <a href="terms-game2.html">Условия Game 2</a>
+      <a href="terms-game1.html">TileShift</a>
+      <a href="terms-game2.html">Другая игра</a>
     </nav>
   </header>
 
   <main>
-    <h2>Наши игры</h2>
+    <h2 style="margin-bottom: 1rem;">Наши игры</h2>
 
     <div class="game">
-      <h3>TileShift</h3>
-      <p>Погрузись в мир снов котёнка Буси и решай головоломки!</p>
-      <a href="terms-game1.html">Правила использования</a>
+      <h3>🐾 TileShift</h3>
+      <p>Кошачий пазл из снов! Буся попадает в миры древнего Китая, ледников и пирамид, чтобы спасти игрушку.</p>
+      <a href="terms-game1.html">Условия использования</a>
     </div>
 
     <div class="game">
-      <h3>Следующая игра</h3>
-      <p>Скоро на экранах…</p>
-      <a href="terms-game2.html">Правила использования</a>
+      <h3>🚀 Следующая игра</h3>
+      <p>Новая аркада на подходе! Следите за новостями — и готовьтесь к приключениям.</p>
+      <a href="terms-game2.html">Условия использования</a>
     </div>
   </main>
 
