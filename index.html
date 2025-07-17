@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <title>Moreman Games</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('images/background.jpg') no-repeat center center fixed;
+      background: url('images/background.jpg') no-repeat center center fixed; 
       background-size: cover;
       color: white;
     }
@@ -27,17 +28,35 @@
       padding: 30px;
       border-radius: 20px;
       box-shadow: 0 0 15px rgba(0,0,0,0.7);
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     h1 {
       text-align: center;
       font-size: 3em;
-      color: #ffd700;
+      background: linear-gradient(to right, #ffd700, #ffa500);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       margin-bottom: 10px;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 150px;
     }
 
     h2 {
       color: #ffa500;
+    }
+
+    h3 i {
+      margin-right: 10px;
     }
 
     p {
@@ -61,6 +80,33 @@
       padding: 20px;
       background-color: rgba(255, 255, 255, 0.05);
       border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .game:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    }
+
+    .game img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #00ffff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #00dddd;
     }
 
     footer {
@@ -75,12 +121,28 @@
       margin: 0 10px;
       text-decoration: underline;
     }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      .game {
+        padding: 10px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="overlay">
     <div class="container">
+      <img src="images/logo.png" alt="Логотип Moreman Games" class="logo">
       <h1>Moreman Games</h1>
+
       <nav>
         <a href="privacy.html">Конфиденциальность</a>
         <a href="terms-game1.html">Условия TileShift</a>
@@ -90,22 +152,27 @@
       <h2>Наши игры</h2>
 
       <div class="game">
-        <h3>TileShift</h3>
+        <img src="images/tileshift-cover.jpg" alt="TileShift">
+        <h3><i class="fas fa-cat"></i> TileShift</h3>
         <p>Захватывающее приключение с Бусей. Исследуй мир, проходи уровни и читай комиксы!</p>
-        <a href="terms-game1.html">Условия использования</a>
+        <a href="terms-game1.html" class="btn">Подробнее</a>
       </div>
 
       <div class="game">
-        <h3>Новая игра</h3>
+        <img src="images/newgame-cover.jpg" alt="Новая игра">
+        <h3><i class="fas fa-gamepad"></i> Новая игра</h3>
         <p>Новая аркада от Moreman Games — сразись с друзьями и установи рекорд!</p>
-        <a href="terms-game2.html">Условия использования</a>
+        <a href="terms-game2.html" class="btn">Подробнее</a>
       </div>
+
+      <h2>Контакты</h2>
+      <p>По вопросам сотрудничества: <a href="mailto:moreman@games.com">moreman@games.com</a></p>
 
       <footer>
         <p>
-          <a href="privacy.html">Политика конфиденциальности</a> |
-          <a href="terms-game1.html">Правила TileShift</a> |
-          <a href="terms-game2.html">Правила Новая игра</a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-discord"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
         </p>
         <p>© 2025 Moreman Games</p>
       </footer>
