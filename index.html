@@ -83,25 +83,41 @@
     }
 
     .game {
-      background-color: rgba(255, 255, 255, 0.05);
-      border-radius: 10px;
+      background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 14px;
       overflow: hidden;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       display: flex;
       flex-direction: column;
+      animation: tileFade 0.5s ease forwards;
+      opacity: 0;
     }
 
     .game:hover {
-      transform: scale(1.02);
-      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 0 25px rgba(0,255,255,0.1);
     }
 
-.game img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  background-color: rgba(255,255,255,0.03);
-}
+    @keyframes tileFade {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .image-wrapper {
+      height: 160px;
+      background-color: rgba(255, 255, 255, 0.03);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .image-wrapper img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+    }
 
     .game-content {
       padding: 15px;
@@ -120,12 +136,13 @@
       font-weight: bold;
       border-radius: 5px;
       text-decoration: none;
-      transition: background 0.3s;
+      transition: background 0.3s, transform 0.3s;
       text-align: center;
     }
 
     .btn:hover {
       background-color: #00dddd;
+      transform: scale(1.05);
     }
 
     footer {
@@ -161,14 +178,16 @@
       <nav>
         <a href="privacy.html">Конфиденциальность</a>
         <a href="terms-game1.html">Условия TileShift</a>
-        <a href="terms-game2.html">Условия Новая игра</a>
+        <a href="terms-game2.html">Условия Next Stop: Color!</a>
       </nav>
 
       <h2>Наши игры</h2>
 
       <div class="games-grid">
         <div class="game">
-          <img src="images/tileshift-cover.png" alt="TileShift">
+          <div class="image-wrapper">
+            <img src="images/tileshift-cover.png" alt="TileShift">
+          </div>
           <div class="game-content">
             <h3><i class="fas fa-cat"></i> TileShift</h3>
             <p>Захватывающее приключение с Бусей. Исследуй мир, проходи уровни и читай комиксы!</p>
@@ -177,17 +196,19 @@
         </div>
 
         <div class="game">
-          <img src="images/newgame-cover.jpg" alt="Новая игра">
+          <div class="image-wrapper">
+            <img src="images/newgame-cover.jpg" alt="Next Stop: Color!">
+          </div>
           <div class="game-content">
-            <h3><i class="fas fa-gamepad"></i> Новая игра</h3>
-            <p>Новая аркада от Moreman Games — сразись с друзьями и установи рекорд!</p>
+            <h3><i class="fas fa-gamepad"></i> Next Stop: Color!</h3>
+            <p>Яркая, мультяшная игра с сортировкой персонажей по цвету, посадкой в автобусы!</p>
             <a href="terms-game2.html" class="btn">Подробнее</a>
           </div>
         </div>
       </div>
 
       <h2>Контакты</h2>
-      <p>По вопросам сотрудничества: <a href="mailto:moreman@games.com">moreman@games.com</a></p>
+      <p>По вопросам сотрудничества: <a href="mailto:moreman32@gmail.com">moreman32@gmail.com</a></p>
 
       <footer>
         <p>
