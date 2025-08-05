@@ -9,64 +9,69 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('../images/background.jpg') no-repeat center center fixed;
+      background: url('images/background.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
     }
 
     .overlay {
-      background-color: rgba(0, 0, 0, 0.65);
+      background-color: rgba(0, 0, 0, 0.6);
       min-height: 100vh;
       padding: 40px 20px;
       box-sizing: border-box;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 800px;
       margin: 0 auto;
-      background-color: rgba(20, 20, 20, 0.85);
+      background-color: rgba(20, 20, 20, 0.8);
       padding: 30px;
       border-radius: 20px;
       box-shadow: 0 0 15px rgba(0,0,0,0.7);
     }
 
-    h1, h2 {
-      color: #ffa500;
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      background: linear-gradient(to right, #ffd700, #ffa500);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 30px;
     }
 
-    .logo {
-      display: block;
-      margin: 0 auto 20px;
-      max-width: 130px;
+    .cover {
+      text-align: center;
+      margin-bottom: 25px;
     }
 
-    .screenshots {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 20px;
+    .cover img {
+      width: 60%;
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.15);
     }
 
-    .screenshots img {
-      width: calc(50% - 5px);
-      border-radius: 10px;
-      border: 2px solid rgba(255,255,255,0.1);
+    p {
+      line-height: 1.6;
+      font-size: 1.1em;
+      margin-bottom: 20px;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 20px;
+      margin: 10px 5px;
       padding: 10px 20px;
       background-color: #00ffff;
       color: #000;
       font-weight: bold;
-      border-radius: 5px;
+      border-radius: 6px;
       text-decoration: none;
-      transition: background 0.3s;
+      transition: background 0.3s, transform 0.3s;
     }
 
     .btn:hover {
       background-color: #00dddd;
+      transform: scale(1.05);
     }
 
     footer {
@@ -78,7 +83,6 @@
 
     footer a {
       color: #cccccc;
-      margin: 0 10px;
       text-decoration: underline;
     }
   </style>
@@ -86,23 +90,21 @@
 <body>
   <div class="overlay">
     <div class="container">
-      <img src="../images/logo.png" alt="Логотип" class="logo">
       <h1>TileShift</h1>
-      <p>Приключенческая головоломка, в которой вы вместе с кошкой Бусей перемещаетесь по тайлам, раскрывая тайны древних цивилизаций через комиксы. 100 уровней, 5 эпох, множество секретов и механик!</p>
 
-      <h2>Скриншоты</h2>
-      <div class="screenshots">
-        <img src="../images/tileshift-1.jpg" alt="Скриншот 1">
-        <img src="../images/tileshift-2.jpg" alt="Скриншот 2">
-        <img src="../images/tileshift-3.jpg" alt="Скриншот 3">
-        <img src="../images/tileshift-4.jpg" alt="Скриншот 4">
+      <div class="cover">
+        <img src="images/tileshift-cover.png" alt="TileShift Обложка">
       </div>
 
-      <a href="../privacy.html" class="btn">Политика конфиденциальности</a>
-      <a href="../index.html" class="btn">← Назад к играм</a>
+      <p>В игре TileShift ты отправишься в красочное приключение вместе с Бусей — умной и милой кошкой. Решай головоломки, собирай тайлы, открывай комиксы и исследуй разные эпохи. Каждые 20 уровней — новая глава сна, полная юмора, загадок и историй!</p>
+
+      <div style="text-align:center;">
+        <a href="terms-game1.html" class="btn">Условия использования</a>
+        <a href="index.html" class="btn">Назад ко всем играм</a>
+      </div>
 
       <footer>
-        <p>© 2025 Moreman Games</p>
+        <p>© 2025 Moreman Games — support@moreman.games</p>
       </footer>
     </div>
   </div>
