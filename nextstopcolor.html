@@ -39,18 +39,16 @@
       margin-bottom: 20px;
     }
 
-    .screenshots {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      margin-top: 30px;
+    .cover {
+      text-align: center;
+      margin-bottom: 25px;
     }
 
-    .screenshots img {
-      width: 100%;
+    .cover img {
+      width: 60%;
+      max-width: 300px;
       border-radius: 12px;
-      object-fit: cover;
-      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+      box-shadow: 0 0 15px rgba(255,255,255,0.15);
     }
 
     p {
@@ -58,14 +56,35 @@
       line-height: 1.6;
     }
 
+    .screenshots {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .screenshots img {
+      width: 30%;
+      min-width: 140px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+
+    .btn-group {
+      text-align: center;
+      margin-top: 30px;
+    }
+
     .btn {
       display: inline-block;
-      margin-top: 20px;
+      margin: 10px 5px;
       padding: 10px 20px;
       background-color: #00ffff;
       color: #000;
       font-weight: bold;
-      border-radius: 5px;
+      border-radius: 6px;
       text-decoration: none;
       transition: background 0.3s, transform 0.3s;
     }
@@ -89,12 +108,12 @@
     }
 
     @media (max-width: 600px) {
-      .screenshots {
-        grid-template-columns: 1fr;
-      }
-
       h1 {
         font-size: 2em;
+      }
+
+      .screenshots img {
+        width: 80%;
       }
     }
   </style>
@@ -104,15 +123,22 @@
     <div class="container">
       <h1>Next Stop: Color!</h1>
 
+      <div class="cover">
+        <img src="images/newgame-cover.jpg" alt="Next Stop: Color! Обложка">
+      </div>
+
       <p>Яркая мультяшная игра, в которой ты сортируешь персонажей по цвету и усаживаешь их в правильные автобусы. Весёлая и быстрая головоломка с милой графикой и плавным геймплеем.</p>
 
       <div class="screenshots">
-        <img src="images/nextstopcolor-screen1.jpg" alt="Скриншот Next Stop: Color! 1">
-        <img src="images/nextstopcolor-screen2.jpg" alt="Скриншот Next Stop: Color! 2">
+        <img src="images/nextstopcolor-screen1.jpg" alt="Скриншот 1">
+        <img src="images/nextstopcolor-screen2.jpg" alt="Скриншот 2">
       </div>
 
-      <a href="privacy.html" class="btn">Политика конфиденциальности</a>
-      <a href="index.html" class="btn">← Назад к играм</a>
+      <div class="btn-group">
+        <a href="terms-nextstopcolor.html" class="btn">Условия использования</a>
+        <a href="privacy-nextstopcolor.html" class="btn">Политика конфиденциальности</a>
+        <a href="index.html" class="btn">← Назад ко всем играм</a>
+      </div>
 
       <footer>
         <p>© 2025 Moreman Games</p>
