@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>TileShift — Moreman Games</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('../images/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.65);
+      min-height: 100vh;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: rgba(20, 20, 20, 0.85);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    }
+
+    h1, h2 {
+      color: #ffa500;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 130px;
+    }
+
+    .screenshots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .screenshots img {
+      width: calc(50% - 5px);
+      border-radius: 10px;
+      border: 2px solid rgba(255,255,255,0.1);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #00ffff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #00dddd;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #cccccc;
+    }
+
+    footer a {
+      color: #cccccc;
+      margin: 0 10px;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="container">
+      <img src="../images/logo.png" alt="Логотип" class="logo">
+      <h1>TileShift</h1>
+      <p>Приключенческая головоломка, в которой вы вместе с кошкой Бусей перемещаетесь по тайлам, раскрывая тайны древних цивилизаций через комиксы. 100 уровней, 5 эпох, множество секретов и механик!</p>
+
+      <h2>Скриншоты</h2>
+      <div class="screenshots">
+        <img src="../images/tileshift-1.jpg" alt="Скриншот 1">
+        <img src="../images/tileshift-2.jpg" alt="Скриншот 2">
+        <img src="../images/tileshift-3.jpg" alt="Скриншот 3">
+        <img src="../images/tileshift-4.jpg" alt="Скриншот 4">
+      </div>
+
+      <a href="../privacy.html" class="btn">Политика конфиденциальности</a>
+      <a href="../index.html" class="btn">← Назад к играм</a>
+
+      <footer>
+        <p>© 2025 Moreman Games</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
