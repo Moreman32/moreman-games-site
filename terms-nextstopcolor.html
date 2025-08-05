@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Условия использования | Next Stop: Color!</title>
+  <title>Условия использования — Next Stop: Color!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
@@ -28,11 +28,26 @@
       padding: 30px;
       border-radius: 20px;
       box-shadow: 0 0 15px rgba(0,0,0,0.7);
+      animation: fadeIn 1.2s ease;
     }
 
-    h1, h2 {
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
       text-align: center;
-      color: #ffd700;
+      font-size: 2.5em;
+      background: linear-gradient(to right, #ff8c00, #ffa500);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #ffa500;
+      margin-top: 30px;
     }
 
     p {
@@ -40,8 +55,9 @@
       margin-bottom: 1em;
     }
 
-    strong {
-      color: #ffa500;
+    ul {
+      list-style: disc;
+      margin-left: 20px;
     }
 
     a {
@@ -49,9 +65,9 @@
       text-decoration: underline;
     }
 
-    .back-button {
+    .btn {
       display: inline-block;
-      margin: 20px 0;
+      margin-top: 30px;
       padding: 10px 20px;
       background-color: #00ffff;
       color: #000;
@@ -61,7 +77,7 @@
       transition: background 0.3s, transform 0.3s;
     }
 
-    .back-button:hover {
+    .btn:hover {
       background-color: #00dddd;
       transform: scale(1.05);
     }
@@ -72,25 +88,30 @@
     <div class="container">
       <h1>Условия использования — Next Stop: Color!</h1>
 
-      <p><strong>1. Общая информация:</strong><br>
-      Next Stop: Color! — это красочная аркадная игра, разработанная студией Moreman Games. Используя игру, вы соглашаетесь с нижеприведёнными условиями.</p>
+      <p>Добро пожаловать в игру <strong>Next Stop: Color!</strong>, разработанную студией <strong>Moreman Games</strong>. Используя приложение, вы соглашаетесь с нижеприведёнными условиями.</p>
 
-      <p><strong>2. Использование:</strong><br>
-      Игра предназначена исключительно для личного, некоммерческого использования. Любое иное использование запрещено без письменного разрешения правообладателя.</p>
+      <h2>1. Право на использование</h2>
+      <p>Пользователь получает ограниченное, неэксклюзивное и непередаваемое право использовать игру в личных, некоммерческих целях. Любое иное использование — включая распространение, модификацию, копирование или декомпиляцию — запрещено.</p>
 
-      <p><strong>3. Интеллектуальная собственность:</strong><br>
-      Все изображения, музыка, персонажи и механики являются собственностью Moreman Games и защищены авторским правом.</p>
+      <h2>2. Интеллектуальная собственность</h2>
+      <p>Все визуальные, аудиовизуальные и геймплейные элементы (графика, персонажи, музыка, код, логика, дизайн) принадлежат Moreman Games и охраняются авторским правом и международными соглашениями.</p>
 
-      <p><strong>4. Ограничение ответственности:</strong><br>
-      Мы не гарантируем бесперебойную работу приложения и не несем ответственности за любые последствия использования.</p>
+      <h2>3. Отказ от гарантий</h2>
+      <p>Игра предоставляется «как есть» без каких-либо прямых или косвенных гарантий. Мы не гарантируем, что игра будет работать без сбоев или ошибок, и не несем ответственности за любые последствия её использования.</p>
 
-      <p><strong>5. Контакты:</strong><br>
-      По вопросам: <a href="mailto:support@moreman.games">support@moreman.games</a></p>
+      <h2>4. Поведение игроков</h2>
+      <p>Запрещается использовать игру с нарушением закона, использовать читы, вмешиваться в работу игры, обходить систему уровней или злоупотреблять механиками сортировки.</p>
 
-<p style="text-align:center">
-  <a href="nextstopcolor.html" class="back-button"><i class="fas fa-arrow-left"></i> Назад к игре</a>
-</p>
+      <h2>5. Реклама и аналитика</h2>
+      <p>В игре может отображаться реклама через платформу <strong>Unity Ads</strong>. Также мы можем собирать обезличенные данные об использовании игры через <strong>Firebase Analytics</strong> для улучшения качества и баланса.</p>
 
+      <h2>6. Обновления</h2>
+      <p>Мы можем выпускать обновления, исправления или улучшения, не уведомляя вас отдельно. Использование новой версии означает согласие с обновлёнными условиями.</p>
+
+      <h2>7. Связь с разработчиком</h2>
+      <p>По любым вопросам, жалобам или предложениям свяжитесь с нами по адресу <a href="mailto:support@moreman.games">support@moreman.games</a></p>
+
+      <a href="nextstopcolor.html" class="btn"><i class="fas fa-arrow-left"></i> Назад к игре</a>
     </div>
   </div>
 </body>
