@@ -15,8 +15,6 @@
       color: white;
     }
 
-
-
     .overlay {
       background-color: rgba(0, 0, 0, 0.6);
       min-height: 100vh;
@@ -41,160 +39,48 @@
 
     h1 {
       text-align: center;
-      font-size: 3em;
-      background: linear-gradient(to right, #ffd700, #ffa500);
+      font-size: 2.5em;
+      background: linear-gradient(to right, #ff8c00, #ffa500);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-bottom: 10px;
-    }
-
-    .logo {
-      display: block;
-      margin: 0 auto 20px;
-      max-width: 150px;
+      margin-bottom: 30px;
     }
 
     h2 {
       color: #ffa500;
-    }
-
-    h3 i {
-      margin-right: 10px;
+      margin-top: 30px;
     }
 
     p {
       line-height: 1.6;
+      margin-bottom: 1em;
     }
 
-    nav {
-      text-align: center;
-      margin: 20px 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
+    ul {
+      list-style: disc;
+      margin-left: 20px;
     }
 
-    nav a {
-      padding: 8px 14px;
-      text-decoration: none;
+    a {
       color: #00ffff;
-      font-weight: bold;
-      background-color: rgba(0,255,255,0.1);
-      border-radius: 6px;
-    }
-
-    .games-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 30px;
-    }
-
-    .game {
-      background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      border-radius: 14px;
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      animation: tileFade 0.5s ease forwards;
-      opacity: 0;
-    }
-
-    .game:hover {
-      transform: translateY(-5px) scale(1.02);
-      box-shadow: 0 0 25px rgba(0,255,255,0.1);
-    }
-
-    @keyframes tileFade {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .image-wrapper {
-      width: 100%;
-      aspect-ratio: 2 / 3;
-      background-color: rgba(255, 255, 255, 0.03);
-      display: block;
-      overflow: hidden;
-    }
-
-    .image-wrapper img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .game-content {
-      padding: 15px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      text-decoration: underline;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 30px;
       padding: 10px 20px;
       background-color: #00ffff;
       color: #000;
       font-weight: bold;
-      border-radius: 5px;
+      border-radius: 6px;
       text-decoration: none;
       transition: background 0.3s, transform 0.3s;
-      text-align: center;
     }
 
     .btn:hover {
       background-color: #00dddd;
       transform: scale(1.05);
-    }
-
-    .email-link {
-      display: inline-block;
-      background-color: #00ffff;
-      color: #000;
-      padding: 8px 14px;
-      border-radius: 6px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-
-    .email-link:hover {
-      background-color: #00dddd;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #cccccc;
-    }
-
-    footer a {
-      color: #cccccc;
-      margin: 0 10px;
-      text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      .container {
-        padding: 15px;
-      }
-
-      h1 {
-        font-size: 2em;
-      }
     }
   
 /* Language toggle */
@@ -228,18 +114,32 @@
 
   <div class="overlay">
     <div class="container">
-      <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to games</a>
       <h1>Terms of Service — Next Stop: Color!</h1>
-      <h2>1. Acceptance</h2>
-      <p>By installing or using <strong>Next Stop: Color!</strong>, you agree to these Terms of Service.</p>
-      <h2>2. License</h2>
-      <p>We grant you a personal, non‑transferable, non‑exclusive license to use the game for personal entertainment.</p>
-      <h2>3. Content and purchases</h2>
-      <p>In‑game content may change or become unavailable. Purchases (if any) are subject to the store’s policies.</p>
-      <h2>4. Liability</h2>
-      <p>The game is provided “as is” without warranties. We are not liable for indirect or incidental damages.</p>
-      <h2>5. Contact</h2>
-      <p>Email: <a href="mailto:support@moreman.games">support@moreman.games</a></p>
+
+      <p>Добро пожаловать в игру <strong>Next Stop: Color!</strong>, разработанную студией <strong>Moreman Games</strong>. Используя приложение, вы соглашаетесь с нижеприведёнными условиями.</p>
+
+      <h2>1. Право на использование</h2>
+      <p>Пользователь получает ограниченное, неэксклюзивное и непередаваемое право использовать игру в личных, некоммерческих целях. Любое иное использование — включая распространение, модификацию, копирование или декомпиляцию — запрещено.</p>
+
+      <h2>2. Интеллектуальная собственность</h2>
+      <p>Все визуальные, аудиовизуальные и геймплейные элементы (графика, персонажи, музыка, код, логика, дизайн) принадлежат Moreman Games и охраняются авторским правом и международными соглашениями.</p>
+
+      <h2>3. Отказ от гарантий</h2>
+      <p>Игра предоставляется «как есть» без каких-либо прямых или косвенных гарантий. Мы не гарантируем, что игра будет работать без сбоев или ошибок, и не несем ответственности за любые последствия её использования.</p>
+
+      <h2>4. Поведение игроков</h2>
+      <p>Запрещается использовать игру с нарушением закона, использовать читы, вмешиваться в работу игры, обходить систему уровней или злоупотреблять механиками сортировки.</p>
+
+      <h2>5. Реклама и аналитика</h2>
+      <p>В игре может отображаться реклама через платформу <strong>Unity Ads</strong>. Также мы можем собирать обезличенные данные об использовании игры через <strong>Firebase Analytics</strong> для улучшения качества и баланса.</p>
+
+      <h2>6. Обновления</h2>
+      <p>Мы можем выпускать обновления, исправления или улучшения, не уведомляя вас отдельно. Использование новой версии означает согласие с обновлёнными условиями.</p>
+
+      <h2>7. Связь с разработчиком</h2>
+      <p>По любым вопросам, жалобам или предложениям свяжитесь с нами по адресу <a href="mailto:support@moreman.games">support@moreman.games</a></p>
+
+      <a href="nextstopcolor.html" class="btn"><i class="fas fa-arrow-left"></i> Назад к игре</a>
     </div>
   </div>
 </body>

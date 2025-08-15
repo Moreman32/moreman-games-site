@@ -15,8 +15,6 @@
       color: white;
     }
 
-
-
     .overlay {
       background-color: rgba(0, 0, 0, 0.6);
       min-height: 100vh;
@@ -25,7 +23,7 @@
     }
 
     .container {
-      max-width: 900px;
+      max-width: 800px;
       margin: 0 auto;
       background-color: rgba(20, 20, 20, 0.75);
       padding: 30px;
@@ -41,104 +39,36 @@
 
     h1 {
       text-align: center;
-      font-size: 3em;
+      font-size: 2.5em;
       background: linear-gradient(to right, #ffd700, #ffa500);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-bottom: 10px;
-    }
-
-    .logo {
-      display: block;
-      margin: 0 auto 20px;
-      max-width: 150px;
+      margin-bottom: 20px;
     }
 
     h2 {
       color: #ffa500;
-    }
-
-    h3 i {
-      margin-right: 10px;
+      margin-top: 30px;
     }
 
     p {
       line-height: 1.6;
+      margin-bottom: 1em;
     }
 
-    nav {
-      text-align: center;
-      margin: 20px 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
+    ul {
+      margin-left: 20px;
+      list-style-type: disc;
     }
 
-    nav a {
-      padding: 8px 14px;
-      text-decoration: none;
+    a {
       color: #00ffff;
-      font-weight: bold;
-      background-color: rgba(0,255,255,0.1);
-      border-radius: 6px;
-    }
-
-    .games-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 30px;
-    }
-
-    .game {
-      background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      border-radius: 14px;
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      animation: tileFade 0.5s ease forwards;
-      opacity: 0;
-    }
-
-    .game:hover {
-      transform: translateY(-5px) scale(1.02);
-      box-shadow: 0 0 25px rgba(0,255,255,0.1);
-    }
-
-    @keyframes tileFade {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .image-wrapper {
-      width: 100%;
-      aspect-ratio: 2 / 3;
-      background-color: rgba(255, 255, 255, 0.03);
-      display: block;
-      overflow: hidden;
-    }
-
-    .image-wrapper img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .game-content {
-      padding: 15px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      text-decoration: underline;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 30px;
       padding: 10px 20px;
       background-color: #00ffff;
       color: #000;
@@ -146,55 +76,11 @@
       border-radius: 5px;
       text-decoration: none;
       transition: background 0.3s, transform 0.3s;
-      text-align: center;
     }
 
     .btn:hover {
       background-color: #00dddd;
       transform: scale(1.05);
-    }
-
-    .email-link {
-      display: inline-block;
-      background-color: #00ffff;
-      color: #000;
-      padding: 8px 14px;
-      border-radius: 6px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-
-    .email-link:hover {
-      background-color: #00dddd;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #cccccc;
-    }
-
-    footer a {
-      color: #cccccc;
-      margin: 0 10px;
-      text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      .container {
-        padding: 15px;
-      }
-
-      h1 {
-        font-size: 2em;
-      }
     }
   
 /* Language toggle */
@@ -228,23 +114,32 @@
 
   <div class="overlay">
     <div class="container">
-      <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to games</a>
       <h1>Privacy Policy — TileShift</h1>
-      <p><strong>TileShift</strong> is a mobile game by Moreman Games. We respect your privacy and collect only the minimum information required to run and improve the game.</p>
-      <h2>1. Data we collect</h2>
-      <p>We do not collect personal data (such as name or email) without your consent. Third‑party SDKs may collect anonymized technical data via the game engine.</p>
+
+      <p><strong>TileShift</strong> — это мобильная игра от студии Moreman Games. Мы ценим вашу конфиденциальность и стремимся к максимально прозрачному использованию данных.</p>
+
+      <h2>1. Какие данные мы собираем</h2>
+      <p>Мы не собираем персональные данные (имя, адрес, электронную почту и т.д.). Игра может использовать обезличенные технические данные, получаемые через Unity.</p>
       <ul>
-        <li>Device type and OS</li>
-        <li>Region and language</li>
-        <li>Gameplay activity and events</li>
+        <li>Тип устройства и операционная система</li>
+        <li>Регион, язык</li>
+        <li>Игровая активность и поведение</li>
       </ul>
-      <h2>2. Ads and analytics</h2>
-      <p>We may use third‑party services (e.g., Unity Ads, AdMob, Firebase Analytics). They can collect anonymized data to personalize ads and analyze usage.</p>
-      <p>Learn more: <a href="https://unity.com/legal/privacy-policy" target="_blank">Unity Privacy Policy</a></p>
-      <h2>3. Your choices</h2>
-      <p>You can limit ad tracking at the system level (IDFA/AAID settings). You can also contact us to remove any information we control.</p>
-      <h2>4. Contact</h2>
-      <p>Email: <a href="mailto:support@moreman.games">support@moreman.games</a></p>
+
+      <h2>2. Рекламные технологии</h2>
+      <p>TileShift использует <strong>Unity Ads</strong> — платформу показа внутриигровой рекламы. Unity может обрабатывать анонимные данные для персонализации и аналитики рекламы.</p>
+      <p>Больше информации: <a href="https://unity.com/legal/privacy-policy" target="_blank">Privacy Policy Unity</a>.</p>
+
+      <h2>3. Хранение данных</h2>
+      <p>Все игровые данные (прогресс, настройки) хранятся локально на вашем устройстве. Никакие данные не передаются третьим лицам, кроме Unity Ads.</p>
+
+      <h2>4. Безопасность</h2>
+      <p>Мы используем только проверенные SDK и не просим доступа к личной информации. Приложение безопасно для детей и не содержит чувствительных данных.</p>
+
+      <h2>5. Contact</h2>
+      <p>Если у вас есть вопросы, напишите нам: <a href="mailto:support@moreman.games">support@moreman.games</a></p>
+
+      <a href="tileshift.html" class="btn"><i class="fas fa-arrow-left"></i> Назад к игре</a>
     </div>
   </div>
 </body>
