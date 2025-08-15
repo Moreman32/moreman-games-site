@@ -1,37 +1,15 @@
 {
-  "site": {
-    "title": "Moreman Games — oyunlarımız",
-    "nav": {
-      "home": "Ana sayfa",
-      "games": "Oyunlar",
-      "about": "Hakkımızda",
-      "contact": "İletişim"
-    },
-    "cta": {
-      "play": "Hemen oyna",
-      "learn": "Daha fazla bilgi"
-    },
-    "footer": {
-      "rights": "Tüm hakları saklıdır",
-      "privacy": "Gizlilik Politikası",
-      "terms": "Kullanım Şartları"
-    }
-  },
-  "home": {
-    "hero": {
-      "headline": "Busya ile sıcacık bulmacalar",
-      "sub": "Hikâyesiyle huzurlu bir eşleştirme oyunu"
-    },
-    "features": {
-      "f1": "Basit kurallar, derin oynanış",
-      "f2": "Busya’nın hikâyesini açmak için taşları topla",
-      "f3": "Çevrimdışı oynanabilir"
-    }
-  },
-  "contact": {
-    "heading": "Bize ulaşın",
-    "email_placeholder": "E‑postanız",
-    "message_placeholder": "Mesajınız",
-    "send": "Gönder"
+  "auto": {
+    "k1": "Moreman Games",
+    "k2": "TileShift",
+    "k3": "Next Stop: Color!",
+    "k4": "Наши игры",
+    "k5": "Головоломка с душой: собирай тайлы, открывай главы комиксов, исследуй разные эпохи, решай загадки и путешествуй с милой кошкой Бусинкой по красочной карте из более чем 200 уровней!",
+    "k6": "Подробнее",
+    "k7": "Весёлый мультяшный раннер-головоломка: сортируй цветных персонажей, сажай их в подходящие автобусы, избегай путаницы и наслаждайся динамикой, графикой и простым управлением!",
+    "k8": "Подробнее",
+    "k9": "Контакты",
+    "k10": "support@moreman.games",
+    "k11": "© 2025 Moreman Games"
   }
 }

@@ -1,37 +1,15 @@
 {
-  "site": {
-    "title": "Moreman Games — nos jeux",
-    "nav": {
-      "home": "Accueil",
-      "games": "Jeux",
-      "about": "À propos",
-      "contact": "Contact"
-    },
-    "cta": {
-      "play": "Jouer maintenant",
-      "learn": "En savoir plus"
-    },
-    "footer": {
-      "rights": "Tous droits réservés",
-      "privacy": "Politique de confidentialité",
-      "terms": "Conditions d’utilisation"
-    }
-  },
-  "home": {
-    "hero": {
-      "headline": "Casse‑têtes douillets avec Busya",
-      "sub": "Un jeu apaisant avec une histoire touchante"
-    },
-    "features": {
-      "f1": "Règles simples, gameplay profond",
-      "f2": "Rassemblez des tuiles pour dévoiler l’histoire de Busya",
-      "f3": "Jouable hors ligne"
-    }
-  },
-  "contact": {
-    "heading": "Nous contacter",
-    "email_placeholder": "Votre e‑mail",
-    "message_placeholder": "Votre message",
-    "send": "Envoyer"
+  "auto": {
+    "k1": "Moreman Games",
+    "k2": "TileShift",
+    "k3": "Next Stop: Color!",
+    "k4": "Наши игры",
+    "k5": "Головоломка с душой: собирай тайлы, открывай главы комиксов, исследуй разные эпохи, решай загадки и путешествуй с милой кошкой Бусинкой по красочной карте из более чем 200 уровней!",
+    "k6": "Подробнее",
+    "k7": "Весёлый мультяшный раннер-головоломка: сортируй цветных персонажей, сажай их в подходящие автобусы, избегай путаницы и наслаждайся динамикой, графикой и простым управлением!",
+    "k8": "Подробнее",
+    "k9": "Контакты",
+    "k10": "support@moreman.games",
+    "k11": "© 2025 Moreman Games"
   }
 }
