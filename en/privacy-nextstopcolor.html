@@ -82,32 +82,31 @@
       background-color: #00dddd;
       transform: scale(1.05);
     }
-  
-/* Language toggle */
-.lang-switch {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 9999;
-  background: rgba(0,0,0,0.5);
-  padding: 4px 6px;
-  border-radius: 8px;
-  backdrop-filter: blur(4px);
-}
-.lang-btn {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 4px;
-  font-weight: bold;
-  padding: 2px 6px;
-  border-radius: 4px;
-}
-.lang-btn:hover { background: rgba(255,255,255,0.2); }
-.lang-btn.active { background: #00ffff; color: #000; }
-</style>
+
+    /* Language toggle */
+    .lang-switch {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 9999;
+      background: rgba(0,0,0,0.5);
+      padding: 4px 6px;
+      border-radius: 8px;
+      backdrop-filter: blur(4px);
+    }
+    .lang-btn {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 4px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .lang-btn:hover { background: rgba(255,255,255,0.2); }
+    .lang-btn.active { background: #00ffff; color: #000; }
+  </style>
 </head>
 <body>
-
 <div class="lang-switch">
   <a href="/privacy-nextstopcolor.html" class="lang-btn">RU</a>
   <a href="/en/privacy-nextstopcolor.html" class="lang-btn active">EN</a>
@@ -117,28 +116,82 @@
     <div class="container">
       <h1>Privacy Policy — Next Stop: Color!</h1>
 
-      <p><strong>Next Stop: Color!</strong> is a mobile game developed by Moreman Games. We respect your privacy and are committed to ensuring the security of your information.</p>
+      <p><strong>Effective date:</strong> August 15, 2025<br>
+         <strong>Last update:</strong> August 15, 2025</p>
+
+      <p><strong>Next Stop: Color!</strong> is a mobile game developed by <strong>Moreman Games</strong>. We respect your privacy and are committed to protecting user data. This Privacy Policy describes what data may be collected, how it is used, and what rights you have.</p>
 
       <h2>1. What data is collected</h2>
-      <p>We do not collect personal data (name, email, phone, etc.). The game may collect anonymized technical data through Unity’s built-in tools.</p>
+      <p>We do not request personal information (such as name, email, phone, etc.) unless you provide it voluntarily (e.g., when contacting support). The game and integrated SDKs may automatically collect anonymized technical data:</p>
       <ul>
-        <li>Device type and OS</li>
-        <li>Language and country</li>
-        <li>Sessions, engagement level, and in-game actions</li>
+        <li><strong>Device and app information:</strong> device model, OS version, app version, language, region, IP (anonymized), timezone.</li>
+        <li><strong>Identifiers:</strong> advertising ID (<em>IDFA</em> on iOS / <em>AAID</em> on Android), Firebase Instance ID.</li>
+        <li><strong>Usage and events:</strong> screen opens, session length, level progress, clicks, ad views, install source; <strong>crashes</strong> and diagnostic data.</li>
+        <li><strong>Approximate location:</strong> inferred from IP (city/country) — for antifraud, analytics, and ad targeting.</li>
       </ul>
 
-      <h2>2. Advertising and analytics</h2>
-      <p>The game uses <strong>Unity Ads</strong> — Unity’s advertising platform. Unity may use anonymized data for advertising and analytics purposes.</p>
-      <p>More details: <a href="https://unity.com/legal/privacy-policy" target="_blank">Unity Privacy Policy</a>.</p>
+      <h2>2. Purpose of data use</h2>
+      <ul>
+        <li>Ensuring correct app functionality and saving game progress.</li>
+        <li>Analyzing usage and improving game quality and balance.</li>
+        <li>Displaying and personalizing ads (with user consent).</li>
+        <li>Fraud prevention, security, and crash diagnostics.</li>
+        <li>Compliance with platform (Google/Apple) and legal requirements.</li>
+      </ul>
 
-      <h2>3. Data storage</h2>
-      <p>All progress and settings data are stored locally on your device. We do not transfer data to third parties.</p>
+      <h2>3. SDKs and third-party services</h2>
+      <p>We may use third-party services (the set may vary by version/build):</p>
+      <ul>
+        <li><strong>Unity Ads</strong> — advertising display, frequency capping, antifraud (<a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank">policy</a>).</li>
+        <li><strong>Firebase Analytics</strong> — usage analytics (<a href="https://policies.google.com/privacy" target="_blank">policy</a>).</li>
+        <li><strong>Firebase Crashlytics</strong> — crash reports and diagnostic data.</li>
+        <li><strong>GameAnalytics</strong> (if used) — gameplay analytics (<a href="https://gameanalytics.com/privacy" target="_blank">policy</a>).</li>
+        <li><strong>Appsflyer</strong> (if used) — campaign attribution (<a href="https://www.appsflyer.com/legal/services-privacy-policy/" target="_blank">policy</a>).</li>
+      </ul>
+      <p>Some providers/SDKs may act as independent data controllers with respect to part of the collected data and process it under their own privacy policies.</p>
 
-      <h2>4. Security</h2>
-      <p>We use only trusted technologies to ensure safe app usage. Personal data is not requested or processed.</p>
+      <h2>4. Data storage and transfer</h2>
+      <ul>
+        <li>Game progress and settings are stored locally on your device.</li>
+        <li>Anonymized technical data may be transferred to partner servers (EU/US and other regions).</li>
+        <li>We do <strong>not sell</strong> your personal data to third parties.</li>
+      </ul>
 
-      <h2>5. Contact</h2>
-      <p>If you have any questions, contact us at: <a href="mailto:support@moreman.games">support@moreman.games</a></p>
+      <h2>5. Legal basis for processing</h2>
+      <ul>
+        <li><strong>GDPR/UK GDPR:</strong> legitimate interests (analytics, security, product improvement) and consent (personalized ads/ad measurement).</li>
+        <li><strong>CCPA/CPRA:</strong> we do not sell personal data; you may opt out of “sharing” for targeted advertising.</li>
+        <li><strong>COPPA:</strong> the game is not intended for children under 13; we do not knowingly collect children’s data.</li>
+      </ul>
+
+      <h2>6. User rights</h2>
+      <p>Depending on your jurisdiction, you may have the following rights:</p>
+      <ul>
+        <li>access, correction, or deletion of data;</li>
+        <li>restriction of processing, objection to processing;</li>
+        <li>data portability (if applicable);</li>
+        <li>withdrawal of consent for personalized advertising.</li>
+      </ul>
+      <p>Requests should be sent to: <a href="mailto:support@moreman.games">support@moreman.games</a>.</p>
+
+      <h2>7. Settings and controls</h2>
+      <ul>
+        <li>Reset advertising ID <strong>IDFA/AAID</strong> — in device settings.</li>
+        <li>Disable personalized ads — in iOS/Android settings or in the consent window (if displayed).</li>
+        <li>Limit analytics collection — in app/device settings (depends on platform and SDK version).</li>
+      </ul>
+
+      <h2>8. Security</h2>
+      <p>We use secure data transfer (HTTPS) and trusted SDKs; however, absolute security cannot be guaranteed.</p>
+
+      <h2>9. Data retention</h2>
+      <p>Technical and analytics data are stored only as long as necessary for the stated purposes, after which they are aggregated or deleted. Local game data is removed when the app is uninstalled.</p>
+
+      <h2>10. Changes to this Policy</h2>
+      <p>We may update this Privacy Policy. See the effective date at the top of the document. In case of significant changes, we may notify users via the app or website.</p>
+
+      <h2>11. Contact</h2>
+      <p>For privacy inquiries and to exercise your rights, contact: <a href="mailto:support@moreman.games">support@moreman.games</a></p>
 
       <a href="nextstopcolor.html" class="btn"><i class="fas fa-arrow-left"></i> Back to game</a>
     </div>
