@@ -1,0 +1,37 @@
+{
+  "site": {
+    "title": "Moreman Games — i nostri giochi",
+    "nav": {
+      "home": "Home",
+      "games": "Giochi",
+      "about": "Chi siamo",
+      "contact": "Contatti"
+    },
+    "cta": {
+      "play": "Gioca ora",
+      "learn": "Scopri di più"
+    },
+    "footer": {
+      "rights": "Tutti i diritti riservati",
+      "privacy": "Privacy",
+      "terms": "Termini di servizio"
+    }
+  },
+  "home": {
+    "hero": {
+      "headline": "Rompicapi accoglienti con Busya",
+      "sub": "Un gioco rilassante con una storia tenera"
+    },
+    "features": {
+      "f1": "Regole semplici, gameplay profondo",
+      "f2": "Colleziona tessere per sbloccare la storia di Busya",
+      "f3": "Gioca offline"
+    }
+  },
+  "contact": {
+    "heading": "Contattaci",
+    "email_placeholder": "La tua e‑mail",
+    "message_placeholder": "Il tuo messaggio",
+    "send": "Invia"
+  }
+}

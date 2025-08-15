@@ -1,0 +1,37 @@
+{
+  "site": {
+    "title": "Moreman Games — nossos jogos",
+    "nav": {
+      "home": "Início",
+      "games": "Jogos",
+      "about": "Sobre",
+      "contact": "Contato"
+    },
+    "cta": {
+      "play": "Jogar agora",
+      "learn": "Saiba mais"
+    },
+    "footer": {
+      "rights": "Todos os direitos reservados",
+      "privacy": "Privacidade",
+      "terms": "Termos de uso"
+    }
+  },
+  "home": {
+    "hero": {
+      "headline": "Quebra‑cabeças aconchegantes com Busya",
+      "sub": "Jogo relaxante com uma história emocionante"
+    },
+    "features": {
+      "f1": "Regras simples, profundidade real",
+      "f2": "Colete peças para revelar a história da Busya",
+      "f3": "Funciona offline"
+    }
+  },
+  "contact": {
+    "heading": "Fale conosco",
+    "email_placeholder": "Seu e‑mail",
+    "message_placeholder": "Sua mensagem",
+    "send": "Enviar"
+  }
+}

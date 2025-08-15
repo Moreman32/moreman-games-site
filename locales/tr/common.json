@@ -1,0 +1,37 @@
+{
+  "site": {
+    "title": "Moreman Games — oyunlarımız",
+    "nav": {
+      "home": "Ana sayfa",
+      "games": "Oyunlar",
+      "about": "Hakkımızda",
+      "contact": "İletişim"
+    },
+    "cta": {
+      "play": "Hemen oyna",
+      "learn": "Daha fazla bilgi"
+    },
+    "footer": {
+      "rights": "Tüm hakları saklıdır",
+      "privacy": "Gizlilik Politikası",
+      "terms": "Kullanım Şartları"
+    }
+  },
+  "home": {
+    "hero": {
+      "headline": "Busya ile sıcacık bulmacalar",
+      "sub": "Hikâyesiyle huzurlu bir eşleştirme oyunu"
+    },
+    "features": {
+      "f1": "Basit kurallar, derin oynanış",
+      "f2": "Busya’nın hikâyesini açmak için taşları topla",
+      "f3": "Çevrimdışı oynanabilir"
+    }
+  },
+  "contact": {
+    "heading": "Bize ulaşın",
+    "email_placeholder": "E‑postanız",
+    "message_placeholder": "Mesajınız",
+    "send": "Gönder"
+  }
+}

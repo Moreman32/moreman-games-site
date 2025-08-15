@@ -1,0 +1,37 @@
+{
+  "site": {
+    "title": "Moreman Games — 私たちのゲーム",
+    "nav": {
+      "home": "ホーム",
+      "games": "ゲーム",
+      "about": "会社情報",
+      "contact": "お問い合わせ"
+    },
+    "cta": {
+      "play": "今すぐプレイ",
+      "learn": "詳しく見る"
+    },
+    "footer": {
+      "rights": "無断転載を禁ず",
+      "privacy": "プライバシー",
+      "terms": "利用規約"
+    }
+  },
+  "home": {
+    "hero": {
+      "headline": "ブーシャとほっこりパズル",
+      "sub": "心温まる物語のリラックスゲーム"
+    },
+    "features": {
+      "f1": "シンプルなルールで奥深い",
+      "f2": "タイルを集めて物語を解放",
+      "f3": "オフライン対応"
+    }
+  },
+  "contact": {
+    "heading": "お問い合わせ",
+    "email_placeholder": "メールアドレス",
+    "message_placeholder": "メッセージ",
+    "send": "送信"
+  }
+}

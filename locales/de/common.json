@@ -1,0 +1,37 @@
+{
+  "site": {
+    "title": "Moreman Games — unsere Spiele",
+    "nav": {
+      "home": "Start",
+      "games": "Spiele",
+      "about": "Über uns",
+      "contact": "Kontakt"
+    },
+    "cta": {
+      "play": "Jetzt spielen",
+      "learn": "Mehr erfahren"
+    },
+    "footer": {
+      "rights": "Alle Rechte vorbehalten",
+      "privacy": "Datenschutz",
+      "terms": "Nutzungsbedingungen"
+    }
+  },
+  "home": {
+    "hero": {
+      "headline": "Gemütliche Rätsel mit Busya",
+      "sub": "Entspannendes Match-3 mit Herz"
+    },
+    "features": {
+      "f1": "Einfache Regeln, Tiefe im Spiel",
+      "f2": "Sammle Kacheln, um Busyas Geschichte freizuschalten",
+      "f3": "Offline spielbar"
+    }
+  },
+  "contact": {
+    "heading": "Kontakt",
+    "email_placeholder": "Deine E‑Mail",
+    "message_placeholder": "Deine Nachricht",
+    "send": "Senden"
+  }
+}

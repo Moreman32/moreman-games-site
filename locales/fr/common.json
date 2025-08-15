@@ -1,0 +1,37 @@
+{
+  "site": {
+    "title": "Moreman Games — nos jeux",
+    "nav": {
+      "home": "Accueil",
+      "games": "Jeux",
+      "about": "À propos",
+      "contact": "Contact"
+    },
+    "cta": {
+      "play": "Jouer maintenant",
+      "learn": "En savoir plus"
+    },
+    "footer": {
+      "rights": "Tous droits réservés",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d’utilisation"
+    }
+  },
+  "home": {
+    "hero": {
+      "headline": "Casse‑têtes douillets avec Busya",
+      "sub": "Un jeu apaisant avec une histoire touchante"
+    },
+    "features": {
+      "f1": "Règles simples, gameplay profond",
+      "f2": "Rassemblez des tuiles pour dévoiler l’histoire de Busya",
+      "f3": "Jouable hors ligne"
+    }
+  },
+  "contact": {
+    "heading": "Nous contacter",
+    "email_placeholder": "Votre e‑mail",
+    "message_placeholder": "Votre message",
+    "send": "Envoyer"
+  }
+}
