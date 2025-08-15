@@ -199,17 +199,25 @@
   </style>
 </head>
 <body>
+<div id="lang-switcher" style="position:fixed;top:10px;right:10px;z-index:9999;background:rgba(0,0,0,.5);padding:6px 8px;border-radius:8px;">
+  <select data-i18n-switcher style="background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);padding:4px;border-radius:6px;">
+    <option value="en">English</option><option value="ru">Русский</option><option value="es">Español</option>
+    <option value="de">Deutsch</option><option value="fr">Français</option><option value="pt">Português</option>
+    <option value="it">Italiano</option><option value="ar">العربية</option><option value="zh">中文</option>
+    <option value="ja">日本語</option><option value="hi">हिन्दी</option><option value="tr">Türkçe</option>
+  </select>
+</div>
   <div class="overlay">
     <div class="container">
       <img src="images/logo.png" alt="Логотип Moreman Games" class="logo">
-      <h1>Moreman Games</h1>
+      <h1 data-i18n="auto.k1">Moreman Games</h1>
 
       <nav>
-        <a href="tileshift.html">TileShift</a>
-        <a href="nextstopcolor.html">Next Stop: Color!</a>
+        <a href="tileshift.html" data-i18n="auto.k2">TileShift</a>
+        <a href="nextstopcolor.html" data-i18n="auto.k3">Next Stop: Color!</a>
       </nav>
 
-      <h2>Наши игры</h2>
+      <h2 data-i18n="auto.k4">Наши игры</h2>
 
       <div class="games-grid">
         <div class="game">
@@ -218,8 +226,8 @@
           </div>
           <div class="game-content">
             <h3><i class="fas fa-cat"></i> TileShift</h3>
-            <p>Головоломка с душой: собирай тайлы, открывай главы комиксов, исследуй разные эпохи, решай загадки и путешествуй с милой кошкой Бусинкой по красочной карте из более чем 200 уровней!</p>
-            <a href="tileshift.html" class="btn">Подробнее</a>
+            <p data-i18n="auto.k5">Головоломка с душой: собирай тайлы, открывай главы комиксов, исследуй разные эпохи, решай загадки и путешествуй с милой кошкой Бусинкой по красочной карте из более чем 200 уровней!</p>
+            <a href="tileshift.html" class="btn" data-i18n="auto.k6">Подробнее</a>
           </div>
         </div>
 
@@ -229,24 +237,26 @@
           </div>
           <div class="game-content">
             <h3><i class="fas fa-gamepad"></i> Next Stop: Color!</h3>
-            <p>Весёлый мультяшный раннер-головоломка: сортируй цветных персонажей, сажай их в подходящие автобусы, избегай путаницы и наслаждайся динамикой, графикой и простым управлением!</p>
-            <a href="nextstopcolor.html" class="btn">Подробнее</a>
+            <p data-i18n="auto.k7">Весёлый мультяшный раннер-головоломка: сортируй цветных персонажей, сажай их в подходящие автобусы, избегай путаницы и наслаждайся динамикой, графикой и простым управлением!</p>
+            <a href="nextstopcolor.html" class="btn" data-i18n="auto.k8">Подробнее</a>
           </div>
         </div>
       </div>
 
-      <h2>Контакты</h2>
+      <h2 data-i18n="auto.k9">Контакты</h2>
       <p>По вопросам сотрудничества:
-        <a href="mailto:support@moreman.games" class="email-link">support@moreman.games</a>
+        <a href="mailto:support@moreman.games" class="email-link" data-i18n="auto.k10">support@moreman.games</a>
       </p>
 
       <footer>
         <p>
           <a href="https://t.me/moreman_games"><i class="fab fa-telegram"></i></a>
         </p>
-        <p>© 2025 Moreman Games</p>
+        <p data-i18n="auto.k11">© 2025 Moreman Games</p>
       </footer>
     </div>
   </div>
+
+  <script src="/assets/js/i18n.js" data-base=""></script>
 </body>
 </html>
