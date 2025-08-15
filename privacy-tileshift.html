@@ -16,7 +16,7 @@
     }
 
     .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: rgba(0,0,0,0.6);
       min-height: 100vh;
       padding: 40px 20px;
       box-sizing: border-box;
@@ -66,9 +66,14 @@
       text-decoration: underline;
     }
 
+    .btn-group {
+      text-align: center;
+      margin-top: 30px;
+    }
+
     .btn {
       display: inline-block;
-      margin-top: 30px;
+      margin: 8px 6px 0 0;
       padding: 10px 20px;
       background-color: #00ffff;
       color: #000;
@@ -188,7 +193,11 @@
       <h2>11. Контакты</h2>
       <p>Если у вас есть вопросы, напишите: <a href="mailto:support@moreman.games">support@moreman.games</a></p>
 
-      <a href="tileshift.html" class="btn"><i class="fas fa-arrow-left"></i> Назад к игре</a>
+      <div class="btn-group">
+        <a href="tileshift.html" class="btn"><i class="fas fa-arrow-left"></i> Назад к игре</a>
+        <a href="terms-tileshift.html" class="btn">Условия использования</a>
+        <a href="index.html" class="btn">Все игры</a>
+      </div>
     </div>
   </div>
 </body>
