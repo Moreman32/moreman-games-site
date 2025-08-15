@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TileShift — game page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="../images/favicon.png" type="image/png">
+  <style>
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('images/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(20, 20, 20, 0.8);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      background: linear-gradient(to right, #ffd700, #ffa500);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 30px;
+    }
+
+    .cover {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .cover img {
+      width: 60%;
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.15);
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .btn-group {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 10px 20px;
+      background-color: #00ffff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #00dddd;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #cccccc;
+    }
+
+    footer a {
+      color: #cccccc;
+      text-decoration: underline;
+    }
+  
+  
+/* Language toggle */
+.lang-switch {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  background: rgba(0,0,0,0.5);
+  padding: 4px 6px;
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+}
+.lang-btn {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 4px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.lang-btn:hover { background: rgba(255,255,255,0.2); }
+.lang-btn.active { background: #00ffff; color: #000; }
+</style>
+</head>
+<body>
+<div class="lang-switch">
+  <a href="/tileshift.html" class="lang-btn">RU</a>
+  <a href="/en/tileshift.html" class="lang-btn active">EN</a>
+</div>
+
+  <div class="overlay">
+    <div class="container">
+      <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to games</a>
+      <img src="../images/tileshift-cover.png" alt="TileShift" class="cover">
+      <h1>TileShift</h1>
+      <p>Cozy tile‑matching with a story: complete levels to unlock comic chapters, explore different eras, and follow Busya the cat on a colorful world map with 200+ levels.</p>
+
+      <h2>Key features</h2>
+      <ul>
+        <li>Simple rules, deep gameplay and relaxing flow</li>
+        <li>Comic cutscenes and a heartfelt story about Busya</li>
+        <li>Chapters themed by historical eras</li>
+        <li>Touch‑friendly controls, offline play</li>
+      </ul>
+
+      <div class="links">
+        <a href="../privacy-tileshift.html" class="btn">Privacy Policy</a>
+        <a href="../terms-tileshift.html" class="btn">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
