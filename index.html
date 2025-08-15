@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title data-i18n="auto.k13">Moreman Games — наши игры</title>
+  <title>Moreman Games — наши игры</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" href="images/favicon.png" type="image/png">
@@ -14,12 +14,16 @@
       background-size: cover;
       color: white;
     }
+
+
+
     .overlay {
       background-color: rgba(0, 0, 0, 0.6);
       min-height: 100vh;
       padding: 40px 20px;
       box-sizing: border-box;
     }
+
     .container {
       max-width: 900px;
       margin: 0 auto;
@@ -29,10 +33,12 @@
       box-shadow: 0 0 15px rgba(0,0,0,0.7);
       animation: fadeIn 1.2s ease;
     }
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
     h1 {
       text-align: center;
       font-size: 3em;
@@ -41,14 +47,25 @@
       -webkit-text-fill-color: transparent;
       margin-bottom: 10px;
     }
+
     .logo {
       display: block;
       margin: 0 auto 20px;
       max-width: 150px;
     }
-    h2 { color: #ffa500; }
-    h3 i { margin-right: 10px; }
-    p { line-height: 1.6; }
+
+    h2 {
+      color: #ffa500;
+    }
+
+    h3 i {
+      margin-right: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
     nav {
       text-align: center;
       margin: 20px 0;
@@ -57,6 +74,7 @@
       justify-content: center;
       gap: 10px;
     }
+
     nav a {
       padding: 8px 14px;
       text-decoration: none;
@@ -65,12 +83,14 @@
       background-color: rgba(0,255,255,0.1);
       border-radius: 6px;
     }
+
     .games-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 30px;
       margin-top: 30px;
     }
+
     .game {
       background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
       border: 1px solid rgba(255, 255, 255, 0.05);
@@ -82,14 +102,17 @@
       animation: tileFade 0.5s ease forwards;
       opacity: 0;
     }
+
     .game:hover {
       transform: translateY(-5px) scale(1.02);
       box-shadow: 0 0 25px rgba(0,255,255,0.1);
     }
+
     @keyframes tileFade {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
     .image-wrapper {
       width: 100%;
       aspect-ratio: 2 / 3;
@@ -97,12 +120,14 @@
       display: block;
       overflow: hidden;
     }
+
     .image-wrapper img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: block;
     }
+
     .game-content {
       padding: 15px;
       flex: 1;
@@ -110,6 +135,7 @@
       flex-direction: column;
       justify-content: space-between;
     }
+
     .btn {
       display: inline-block;
       margin-top: 10px;
@@ -122,7 +148,12 @@
       transition: background 0.3s, transform 0.3s;
       text-align: center;
     }
-    .btn:hover { background-color: #00dddd; transform: scale(1.05); }
+
+    .btn:hover {
+      background-color: #00dddd;
+      transform: scale(1.05);
+    }
+
     .email-link {
       display: inline-block;
       background-color: #00ffff;
@@ -133,44 +164,79 @@
       text-decoration: none;
       transition: background 0.3s;
     }
-    .email-link:hover { background-color: #00dddd; }
+
+    .email-link:hover {
+      background-color: #00dddd;
+    }
+
     footer {
       text-align: center;
       margin-top: 40px;
       font-size: 0.9em;
       color: #cccccc;
     }
-    footer a { color: #cccccc; margin: 0 10px; text-decoration: underline; }
-    @media (max-width: 600px) {
-      nav { flex-direction: column; gap: 12px; }
-      .container { padding: 15px; }
-      h1 { font-size: 2em; }
+
+    footer a {
+      color: #cccccc;
+      margin: 0 10px;
+      text-decoration: underline;
     }
-    /* Optional: minimal RTL support */
-    html.rtl body { direction: rtl; }
-    html.rtl nav a { margin-left: 0; }
-  </style>
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .container {
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+    }
+  
+/* Language toggle */
+.lang-switch {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  background: rgba(0,0,0,0.5);
+  padding: 4px 6px;
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+}
+.lang-btn {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 4px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.lang-btn:hover { background: rgba(255,255,255,0.2); }
+.lang-btn.active { background: #00ffff; color: #000; }
+</style>
 </head>
 <body>
-<div id="lang-switcher" style="position:fixed;top:10px;right:10px;z-index:9999;background:rgba(0,0,0,.5);padding:6px 8px;border-radius:8px;">
-  <select data-i18n-switcher style="background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4);padding:4px;border-radius:6px;">
-    <option value="en">English</option><option value="ru">Русский</option><option value="es">Español</option>
-    <option value="de">Deutsch</option><option value="fr">Français</option><option value="pt">Português</option>
-    <option value="it">Italiano</option><option value="ar">العربية</option><option value="zh">中文</option>
-    <option value="ja">日本語</option><option value="hi">हिन्दी</option><option value="tr">Türkçe</option>
-  </select>
+<div class="lang-switch">
+  <a href="/" class="lang-btn active">RU</a>
+  <a href="/en/" class="lang-btn">EN</a>
 </div>
+
   <div class="overlay">
     <div class="container">
       <img src="images/logo.png" alt="Логотип Moreman Games" class="logo">
-      <h1 data-i18n="auto.k1">Moreman Games</h1>
+      <h1>Moreman Games</h1>
 
       <nav>
-        <a href="tileshift.html" data-i18n="auto.k2">TileShift</a>
-        <a href="nextstopcolor.html" data-i18n="auto.k3">Next Stop: Color!</a>
+        <a href="tileshift.html">TileShift</a>
+        <a href="nextstopcolor.html">Next Stop: Color!</a>
       </nav>
 
-      <h2 data-i18n="auto.k4">Наши игры</h2>
+      <h2>Наши игры</h2>
 
       <div class="games-grid">
         <div class="game">
@@ -179,8 +245,8 @@
           </div>
           <div class="game-content">
             <h3><i class="fas fa-cat"></i> TileShift</h3>
-            <p data-i18n="auto.k5">Головоломка с душой: собирай тайлы, открывай главы комиксов, исследуй разные эпохи, решай загадки и путешествуй с милой кошкой Бусинкой по красочной карте из более чем 200 уровней!</p>
-            <a href="tileshift.html" class="btn" data-i18n="auto.k6">Подробнее</a>
+            <p>Головоломка с душой: собирай тайлы, открывай главы комиксов, исследуй разные эпохи, решай загадки и путешествуй с милой кошкой Бусинкой по красочной карте из более чем 200 уровней!</p>
+            <a href="tileshift.html" class="btn">Подробнее</a>
           </div>
         </div>
 
@@ -190,27 +256,24 @@
           </div>
           <div class="game-content">
             <h3><i class="fas fa-gamepad"></i> Next Stop: Color!</h3>
-            <p data-i18n="auto.k7">Весёлый мультяшный раннер-головоломка: сортируй цветных персонажей, сажай их в подходящие автобусы, избегай путаницы и наслаждайся динамикой, графикой и простым управлением!</p>
-            <a href="nextstopcolor.html" class="btn" data-i18n="auto.k8">Подробнее</a>
+            <p>Весёлый мультяшный раннер-головоломка: сортируй цветных персонажей, сажай их в подходящие автобусы, избегай путаницы и наслаждайся динамикой, графикой и простым управлением!</p>
+            <a href="nextstopcolor.html" class="btn">Подробнее</a>
           </div>
         </div>
       </div>
 
-      <h2 data-i18n="auto.k9">Контакты</h2>
-      <p>
-        <span data-i18n="auto.k12">По вопросам сотрудничества:</span>
-        <a href="mailto:support@moreman.games" class="email-link" data-i18n="auto.k10">support@moreman.games</a>
+      <h2>Контакты</h2>
+      <p>По вопросам сотрудничества:
+        <a href="mailto:support@moreman.games" class="email-link">support@moreman.games</a>
       </p>
 
       <footer>
         <p>
           <a href="https://t.me/moreman_games"><i class="fab fa-telegram"></i></a>
         </p>
-        <p data-i18n="auto.k11">© 2025 Moreman Games</p>
+        <p>© 2025 Moreman Games</p>
       </footer>
     </div>
   </div>
-
-  <script src="assets/js/i18n.js" data-base="."></script>
 </body>
 </html>
