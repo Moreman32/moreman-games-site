@@ -62,6 +62,24 @@
       margin-bottom: 20px;
     }
 
+    .screenshots {
+      margin-top: 30px;
+    }
+
+    .screenshots-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .screenshots-grid img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.15);
+      display: block;
+    }
+
     .btn-group {
       text-align: center;
       margin-bottom: 20px;
@@ -94,6 +112,12 @@
     footer a {
       color: #cccccc;
       text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      .screenshots-grid {
+        grid-template-columns: 1fr;
+      }
     }
   
 /* Language toggle */
@@ -157,9 +181,12 @@
       
 <div class="screenshots">
   <h2 style="text-align:center; color:#ffa500;">Скриншоты</h2>
-  <div style="display: flex; justify-content: center; gap: 30px; margin-top: 20px;">
-    <img src="images/tileshift-screen1.png" alt="Скриншот 1" style="width: 38%; border-radius: 12px; box-shadow: 0 0 10px rgba(255,255,255,0.15);">
-    <img src="images/tileshift-screen2.png" alt="Скриншот 2" style="width: 38%; border-radius: 12px; box-shadow: 0 0 10px rgba(255,255,255,0.15);">
+  <div class="screenshots-grid">
+    <img src="images/tileshift-screen1-ru.png" alt="Скриншот 1">
+    <img src="images/tileshift-screen2-ru.png" alt="Скриншот 2">
+    <img src="images/tileshift-screen3-ru.png" alt="Скриншот 3">
+    <img src="images/tileshift-screen4-ru.png" alt="Скриншот 4">
+    <img src="images/tileshift-screen5-ru.png" alt="Скриншот 5">
   </div>
 </div>
 
