@@ -134,7 +134,7 @@
       <p>Мы не просим вас создавать аккаунт и обычно не запрашиваем напрямую такие данные, как ФИО, почтовый адрес или email, если только вы сами не предоставляете их, например при обращении в поддержку. При этом игра и встроенные SDK могут обрабатывать технические и идентификационные данные, необходимые для работы приложения, аналитики, диагностики и рекламы:</p>
       <ul>
         <li>Техническая информация: модель устройства, ОС, язык, регион, IP (обезличенный)</li>
-        <li>Уникальные идентификаторы: IDFA (iOS), AAID (Android), Firebase ID</li>
+        <li>Уникальные идентификаторы: IDFA (iOS), AAID (Android), Firebase Installation ID и/или идентификаторы, связанные с сообщениями и аналитикой</li>
         <li>Игровая активность: прогресс, время в игре, просмотр рекламы</li>
         <li>Диагностика: ошибки, крэши, логи</li>
         <li>Информация о рекламе: показы, клики, предотвращение мошенничества</li>
@@ -150,13 +150,14 @@
       </ul>
 
       <h2>3. Используемые сервисы и SDK</h2>
-      <p>Мы можем использовать сторонние сервисы:</p>
+      <p>Мы можем использовать сторонние сервисы и SDK, состав которых зависит от платформы и версии приложения:</p>
       <ul>
         <li><strong>Unity Ads</strong> — реклама и аналитика (<a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener noreferrer">политика</a>)</li>
-        <li><strong>Firebase Analytics</strong> — аналитика (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">политика</a>)</li>
-        <li><strong>Firebase Crashlytics</strong> — отчёты об ошибках</li>
-        <li><strong>GameAnalytics</strong> — геймплейная аналитика (<a href="https://gameanalytics.com/privacy" target="_blank" rel="noopener noreferrer">политика</a>)</li>
-        <li><strong>Appsflyer</strong> (при использовании) — атрибуция рекламы (<a href="https://www.appsflyer.com/legal/services-privacy-policy/" target="_blank" rel="noopener noreferrer">политика</a>)</li>
+        <li><strong>Google Mobile Ads (AdMob)</strong> — показ рекламы, измерение эффективности рекламы и управление согласием (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">политика</a>)</li>
+        <li><strong>Firebase Analytics</strong> — аналитика использования (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">политика</a>)</li>
+        <li><strong>Firebase Auth</strong> — сервисы аутентификации и связанные технические идентификаторы (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">политика</a>)</li>
+        <li><strong>Firebase Firestore</strong> — хранение и синхронизация данных приложения (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">политика</a>)</li>
+        <li><strong>Firebase Messaging</strong> — доставка push-уведомлений и связанные токены/идентификаторы сообщений (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">политика</a>)</li>
       </ul>
 
       <h2>4. Передача и хранение данных</h2>
