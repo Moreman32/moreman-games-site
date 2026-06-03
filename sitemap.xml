@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Main pages -->
+  <url>
+    <loc>https://moreman.games/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://moreman.games/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moreman.games/en/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://moreman.games/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://moreman.games/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moreman.games/en/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- TileShift -->
+  <url>
+    <loc>https://moreman.games/tileshift.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://moreman.games/tileshift.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moreman.games/en/tileshift.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://moreman.games/en/tileshift.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://moreman.games/privacy-tileshift.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://moreman.games/terms-tileshift.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://moreman.games/support-tileshift.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Next Stop: Color! -->
+  <url>
+    <loc>https://moreman.games/nextstopcolor.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://moreman.games/nextstopcolor.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moreman.games/en/nextstopcolor.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://moreman.games/en/nextstopcolor.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://moreman.games/privacy-nextstopcolor.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://moreman.games/terms-nextstopcolor.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Explore Cyprus -->
+  <url>
+    <loc>https://moreman.games/explore-cyprus.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://moreman.games/explore-cyprus.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moreman.games/explore-cyprus.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://moreman.games/privacy-explore-cyprus.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://moreman.games/terms-explore-cyprus.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://moreman.games/support-explore-cyprus.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy — Explore Cyprus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for Explore Cyprus mobile application.">
+  <link rel="canonical" href="https://moreman.games/privacy-explore-cyprus.html">
+  <link rel="alternate" hreflang="ru" href="https://moreman.games/privacy-explore-cyprus.html">
+  <link rel="alternate" hreflang="en" href="https://moreman.games/privacy-explore-cyprus.html">
+  <link rel="alternate" hreflang="x-default" href="https://moreman.games/privacy-explore-cyprus.html">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('/images/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      background-color: rgba(20, 20, 20, 0.8);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #00ffff;
+      text-decoration: none;
+      font-size: 0.9em;
+      margin-bottom: 24px;
+    }
+    .back-link:hover { color: #fff; }
+    h1 { text-align: center; font-size: 2em; background: linear-gradient(to right, #ffd700, #ffa500); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 6px; }
+    h2 { color: #ffa500; margin-top: 28px; border-bottom: 1px solid rgba(255,165,0,0.2); padding-bottom: 6px; }
+    p, li { line-height: 1.7; color: #eee; font-size: 0.95em; }
+    ul { padding-left: 20px; }
+    .updated { color: #aaa; font-size: 0.85em; margin-bottom: 24px; }
+    .highlight {
+      background: rgba(255,255,255,0.06);
+      border-left: 3px solid #ffa500;
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 14px 0;
+    }
+    footer { text-align: center; margin-top: 40px; font-size: 0.9em; color: #ccc; }
+    footer a { color: #ccc; text-decoration: underline; }
+    .lang-switch {
+      position: fixed; top: 10px; right: 10px; z-index: 9999;
+      background: rgba(0,0,0,0.5); padding: 4px 6px;
+      border-radius: 8px; backdrop-filter: blur(4px);
+    }
+    .lang-btn {
+      color: #fff; text-decoration: none; margin: 0 4px;
+      font-weight: bold; padding: 2px 8px; border-radius: 4px;
+      cursor: pointer; background: none; border: none; font-size: 1em;
+    }
+    .lang-btn:hover { background: rgba(255,255,255,0.2); }
+    .lang-btn.active { background: #00ffff; color: #000; }
+    [data-lang] { display: none; }
+    @media (max-width: 600px) { .container { padding: 20px; } }
+  </style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <button class="lang-btn active" id="btn-ru" onclick="setLang('ru')">RU</button>
+  <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+</div>
+
+<div class="overlay">
+<div class="container">
+
+  <a href="explore-cyprus.html" class="back-link">← Explore Cyprus</a>
+
+  <!-- ===================== RUSSIAN ===================== -->
+  <div data-lang="ru">
+    <h1>Политика конфиденциальности</h1>
+    <p class="updated">Приложение: <strong>Explore Cyprus</strong> &nbsp;|&nbsp; Bundle ID: com.moreman32.cyprusbeaches &nbsp;|&nbsp; Последнее обновление: 3 июня 2026 г.</p>
+
+    <div class="highlight">
+      Мы ценим вашу конфиденциальность. Этот документ объясняет, какие данные собираются, как они используются и какие права у вас есть.
+    </div>
+
+    <h2>1. Оператор данных</h2>
+    <p>Оператором персональных данных является Moreman Games (<a href="mailto:support@moreman.games" style="color:#ffa500">support@moreman.games</a>). Если у вас есть вопросы, связанные с конфиденциальностью, свяжитесь с нами по этому адресу.</p>
+
+    <h2>2. Какие данные мы собираем</h2>
+    <h2 style="font-size:1em; color:#ffd700; border:none; padding:0; margin-top:16px;">2.1 Данные аккаунта</h2>
+    <ul>
+      <li>Email-адрес и пароль (при регистрации через email).</li>
+      <li>Имя и фото профиля из Google или Apple ID (при входе через OAuth/Apple Sign In).</li>
+      <li>Никнейм, выбранный пользователем для таблицы лидеров.</li>
+    </ul>
+    <h2 style="font-size:1em; color:#ffd700; border:none; padding:0; margin-top:16px;">2.2 Пользовательский контент</h2>
+    <ul>
+      <li>Фотографии, загруженные пользователем (хранятся в Supabase Storage).</li>
+      <li>Текстовые отзывы и числовые оценки объектов.</li>
+      <li>Список посещённых мест и избранного.</li>
+    </ul>
+    <h2 style="font-size:1em; color:#ffd700; border:none; padding:0; margin-top:16px;">2.3 Геолокация</h2>
+    <p>Приложение запрашивает доступ к геолокации устройства исключительно для:</p>
+    <ul>
+      <li>отображения расстояния от вас до объектов на карте;</li>
+      <li>автоматической верификации посещения (GPS-проверка в радиусе 100 м).</li>
+    </ul>
+    <div class="highlight"><strong>Геолокация не сохраняется на серверах Moreman Games.</strong> Координаты обрабатываются только локально на устройстве в момент использования функции.</div>
+    <h2 style="font-size:1em; color:#ffd700; border:none; padding:0; margin-top:16px;">2.4 Технические данные</h2>
+    <ul>
+      <li>Тип и версия ОС (iOS / Android).</li>
+      <li>Анонимные идентификаторы сессии, необходимые для работы приложения.</li>
+    </ul>
+    <p>Мы <strong>не собираем</strong> IDFA, рекламные идентификаторы, данные о финансовых транзакциях или чувствительные категории персональных данных.</p>
+
+    <h2>3. Как мы используем данные</h2>
+    <ul>
+      <li>Авторизация и управление аккаунтом.</li>
+      <li>Отображение пользовательских фото, отзывов и достижений.</li>
+      <li>Формирование таблицы лидеров.</li>
+      <li>Модерация загружаемого контента.</li>
+      <li>Улучшение приложения (анализ агрегированных, обезличенных данных).</li>
+      <li>Ответ на запросы в поддержку.</li>
+    </ul>
+    <p>Мы не продаём персональные данные третьим лицам и не используем их в рекламных целях.</p>
+
+    <h2>4. Передача данных третьим сторонам</h2>
+    <ul>
+      <li><strong>Supabase Inc.</strong> — хранение базы данных, аутентификация и хранение фотографий. Данные могут храниться на серверах в ЕС или США в соответствии с политикой Supabase.</li>
+      <li><strong>Google LLC</strong> — при использовании Sign in with Google (данные передаются согласно политике Google OAuth).</li>
+      <li><strong>Apple Inc.</strong> — при использовании Sign in with Apple (данные передаются согласно политике Apple).</li>
+      <li><strong>Провайдер погодного API</strong> — запрос по координатам текущей погоды. Координаты не привязываются к аккаунту и не сохраняются.</li>
+    </ul>
+
+    <h2>5. Безопасность данных</h2>
+    <p>Мы применяем Row Level Security (RLS) в Supabase, шифрование при передаче (HTTPS/TLS) и аутентификацию по токенам. Доступ к данным предоставляется только авторизованным пользователям в объёме, необходимом для работы приложения.</p>
+
+    <h2>6. Хранение данных</h2>
+    <p>Данные хранятся до тех пор, пока существует ваш аккаунт. При удалении аккаунта удаляются все персональные данные, отзывы, фото и история посещений. Публично размещённый контент (отзывы, фото) может быть обезличен и сохранён в агрегированной форме.</p>
+
+    <h2>7. Гостевой режим</h2>
+    <p>Приложение работает без регистрации. В гостевом режиме не собираются данные аккаунта. Некоторые функции (отзывы, фото, достижения, лидерборд) доступны только зарегистрированным пользователям.</p>
+
+    <h2>8. Дети</h2>
+    <p>Приложение не предназначено для детей до 13 лет (или до 16 лет в ЕС/GDPR). Мы намеренно не собираем данные несовершеннолетних. Если вы считаете, что ребёнок предоставил нам данные, свяжитесь с нами — мы немедленно их удалим.</p>
+
+    <h2>9. Ваши права</h2>
+    <p>Вы имеете право:</p>
+    <ul>
+      <li>запросить доступ к своим персональным данным;</li>
+      <li>потребовать исправления неточных данных;</li>
+      <li>потребовать удаления данных («право на забвение»);</li>
+      <li>отозвать согласие на обработку данных;</li>
+      <li>запросить перенос данных (для пользователей из ЕС).</li>
+    </ul>
+    <p>Для реализации прав обращайтесь: <a href="mailto:support@moreman.games" style="color:#ffa500">support@moreman.games</a>. Мы ответим в течение 30 дней.</p>
+
+    <h2>10. Разрешения приложения</h2>
+    <ul>
+      <li><strong>Геолокация (Location When In Use)</strong> — для расстояний и верификации посещений. Не используется в фоне.</li>
+      <li><strong>Камера / Галерея (Photo Library)</strong> — только для загрузки фото пользователем по его желанию.</li>
+    </ul>
+
+    <h2>11. Изменения политики</h2>
+    <p>При существенных изменениях мы уведомим пользователей через push-уведомление или экран приветствия. Дата «Последнее обновление» в заголовке всегда актуальна.</p>
+
+    <h2>12. Контакты</h2>
+    <p>Moreman Games<br>
+    Email: <a href="mailto:support@moreman.games" style="color:#ffa500">support@moreman.games</a></p>
+  </div>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <div data-lang="en">
+    <h1>Privacy Policy</h1>
+    <p class="updated">App: <strong>Explore Cyprus</strong> &nbsp;|&nbsp; Bundle ID: com.moreman32.cyprusbeaches &nbsp;|&nbsp; Last updated: June 3, 2026</p>
+
+    <div class="highlight">
+      We respect your privacy. This document explains what data we collect, how we use it, and what rights you have.
+    </div>
+
+    <h2>1. Data Controller</h2>
+    <p>The data controller is Moreman Games (<a href="mailto:support@moreman.games" style="color:#ffa500">support@moreman.games</a>). For any privacy-related questions, please contact us at that address.</p>
+
+    <h2>2. Data We Collect</h2>
+    <h2 style="font-size:1em; color:#ffd700; border:none; padding:0; margin-top:16px;">2.1 Account Data</h2>
+    <ul>
+      <li>Email address and password (when registering via email).</li>
+      <li>Name and profile picture from Google or Apple ID (when signing in via OAuth / Apple Sign In).</li>
+      <li>Nickname chosen by the user for the leaderboard.</li>
+    </ul>
+    <h2 style="font-size:1em; color:#ffd700; border:none; padding:0; margin-top:16px;">2.2 User-Generated Content</h2>
+    <ul>
+      <li>Photos uploaded by the user (stored in Supabase Storage).</li>
+      <li>Written reviews and numeric ratings for places.</li>
+      <li>List of visited places and favourites.</li>
+    </ul>
+    <h2 style="font-size:1em; color:#ffd700; border:none; padding:0; margin-top:16px;">2.3 Location Data</h2>
+    <p>The app requests access to the device's location solely for:</p>
+    <ul>
+      <li>displaying the distance from you to places on the map;</li>
+      <li>automatically verifying a visit (GPS check within a 100 m radius).</li>
+    </ul>
+    <div class="highlight"><strong>Location data is never stored on Moreman Games servers.</strong> Coordinates are processed locally on the device only at the time the feature is used.</div>
+    <h2 style="font-size:1em; color:#ffd700; border:none; padding:0; margin-top:16px;">2.4 Technical Data</h2>
+    <ul>
+      <li>OS type and version (iOS / Android).</li>
+      <li>Anonymous session identifiers required for app operation.</li>
+    </ul>
+    <p>We do <strong>not</strong> collect IDFA, advertising identifiers, financial transaction data, or sensitive categories of personal data.</p>
+
+    <h2>3. How We Use the Data</h2>
+    <ul>
+      <li>Authentication and account management.</li>
+      <li>Displaying user photos, reviews, and achievements.</li>
+      <li>Populating the leaderboard.</li>
+      <li>Moderating uploaded content.</li>
+      <li>Improving the app (analysis of aggregated, anonymised data).</li>
+      <li>Responding to support requests.</li>
+    </ul>
+    <p>We do not sell personal data to third parties or use it for advertising purposes.</p>
+
+    <h2>4. Third-Party Data Sharing</h2>
+    <ul>
+      <li><strong>Supabase Inc.</strong> — database storage, authentication, and photo storage. Data may be stored on servers in the EU or the US in accordance with Supabase's policy.</li>
+      <li><strong>Google LLC</strong> — when Sign in with Google is used (data transferred per Google OAuth policy).</li>
+      <li><strong>Apple Inc.</strong> — when Sign in with Apple is used (data transferred per Apple's policy).</li>
+      <li><strong>Weather API provider</strong> — a coordinate-based current weather request. Coordinates are not linked to an account and are not stored.</li>
+    </ul>
+
+    <h2>5. Data Security</h2>
+    <p>We employ Row Level Security (RLS) in Supabase, encryption in transit (HTTPS/TLS), and token-based authentication. Access to data is granted only to authorised users to the extent required for app functionality.</p>
+
+    <h2>6. Data Retention</h2>
+    <p>Data is retained as long as your account exists. When an account is deleted, all personal data, reviews, photos, and visit history are removed. Publicly posted content (reviews, photos) may be anonymised and retained in aggregated form.</p>
+
+    <h2>7. Guest Mode</h2>
+    <p>The app works without registration. In guest mode, no account data is collected. Some features (reviews, photos, achievements, leaderboard) are available to registered users only.</p>
+
+    <h2>8. Children</h2>
+    <p>The app is not intended for children under 13 (or under 16 in the EU/GDPR). We do not knowingly collect data from minors. If you believe a child has provided us with data, contact us and we will delete it immediately.</p>
+
+    <h2>9. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>request access to your personal data;</li>
+      <li>request correction of inaccurate data;</li>
+      <li>request deletion of data ("right to be forgotten");</li>
+      <li>withdraw consent to data processing;</li>
+      <li>request data portability (for EU users).</li>
+    </ul>
+    <p>To exercise your rights, contact: <a href="mailto:support@moreman.games" style="color:#ffa500">support@moreman.games</a>. We will respond within 30 days.</p>
+
+    <h2>10. App Permissions</h2>
+    <ul>
+      <li><strong>Location (When In Use)</strong> — for distance display and visit verification. Not used in the background.</li>
+      <li><strong>Camera / Photo Library</strong> — only for uploading photos at the user's own initiative.</li>
+    </ul>
+
+    <h2>11. Policy Changes</h2>
+    <p>For significant changes we will notify users via push notification or a welcome screen. The "Last updated" date in the header is always current.</p>
+
+    <h2>12. Contact</h2>
+    <p>Moreman Games<br>
+    Email: <a href="mailto:support@moreman.games" style="color:#ffa500">support@moreman.games</a></p>
+  </div>
+
+  <footer>
+    <p>
+      <a href="explore-cyprus.html">Explore Cyprus</a> &nbsp;|&nbsp;
+      <a href="terms-explore-cyprus.html" id="terms-link">Terms of Use</a>
+    </p>
+    <p>© 2026 Moreman Games</p>
+  </footer>
+
+</div>
+</div>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('[data-lang]').forEach(el => {
+      el.style.display = el.dataset.lang === lang ? 'block' : 'none';
+    });
+    document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('terms-link').textContent = lang === 'ru' ? 'Пользовательское соглашение' : 'Terms of Use';
+    document.documentElement.lang = lang;
+    localStorage.setItem('ce-lang', lang);
+  }
+  const saved = localStorage.getItem('ce-lang') || (navigator.language.startsWith('ru') ? 'ru' : 'en');
+  setLang(saved);
+</script>
+</body>
+</html>
