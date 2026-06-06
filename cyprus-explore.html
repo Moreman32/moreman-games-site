@@ -81,6 +81,59 @@
       transition: background 0.3s, transform 0.3s;
     }
 
+    .coming-soon-banner {
+      background: linear-gradient(135deg, rgba(255,165,0,0.15), rgba(255,215,0,0.1));
+      border: 1px solid rgba(255,165,0,0.5);
+      border-radius: 12px;
+      padding: 14px 20px;
+      text-align: center;
+      margin-bottom: 24px;
+      font-size: 1em;
+    }
+    .coming-soon-banner .badge {
+      display: inline-block;
+      background: #ffa500;
+      color: #000;
+      font-weight: bold;
+      font-size: 0.75em;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 6px;
+    }
+
+    .btn-disabled {
+      display: inline-block;
+      margin: 8px 5px;
+      padding: 10px 20px;
+      background-color: rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.4);
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      border: 1px dashed rgba(255,255,255,0.25);
+      cursor: not-allowed;
+      position: relative;
+    }
+    .btn-disabled::after {
+      content: 'скоро';
+      position: absolute;
+      top: -8px;
+      right: -4px;
+      background: #ffa500;
+      color: #000;
+      font-size: 0.6em;
+      font-weight: bold;
+      padding: 1px 5px;
+      border-radius: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .btn-disabled.en-label::after {
+      content: 'soon';
+    }
+
     .btn:hover {
       background-color: #00dddd;
       transform: scale(1.05);
@@ -150,6 +203,11 @@
   <!-- ============ RUSSIAN ============ -->
   <div data-lang="ru">
 
+    <div class="coming-soon-banner">
+      <div class="badge">Скоро</div><br>
+      Приложение находится в разработке и скоро появится в App Store и Google Play.
+    </div>
+
     <p style="text-align:center; color:#ffa500; margin-top:0;">Ваш персональный гид по Кипру</p>
 
     <p><strong>Cyprus Explore</strong> — мобильное приложение для исследования лучших мест Кипра. 100+ пляжей и 100+ достопримечательностей с детальными карточками, интерактивной картой, погодой в реальном времени и системой достижений. Доступно на трёх языках: English, Русский, Ελληνικά.</p>
@@ -168,11 +226,11 @@
       <li><strong>Достижения и лидерборд</strong> — зарабатывайте ачивменты за активность и соревнуйтесь с другими путешественниками.</li>
     </ul>
 
-    <p>Работает без регистрации. Поддерживает вход через Email, Google и Apple. Доступно для iOS и Android.</p>
+    <p>Работает без регистрации. Поддерживает вход через Email, Google и Apple. Скоро для iOS и Android.</p>
 
     <div class="btn-group">
-      <a href="#" class="btn"><i class="fab fa-apple"></i> App Store</a>
-      <a href="#" class="btn"><i class="fab fa-google-play"></i> Google Play</a>
+      <span class="btn-disabled"><i class="fab fa-apple"></i> App Store</span>
+      <span class="btn-disabled"><i class="fab fa-google-play"></i> Google Play</span>
     </div>
 
     <div class="btn-group">
@@ -186,6 +244,11 @@
 
   <!-- ============ ENGLISH ============ -->
   <div data-lang="en">
+
+    <div class="coming-soon-banner">
+      <div class="badge">Coming Soon</div><br>
+      The app is currently in development and will be available on App Store and Google Play soon.
+    </div>
 
     <p style="text-align:center; color:#ffa500; margin-top:0;">Your personal guide to Cyprus</p>
 
@@ -205,11 +268,11 @@
       <li><strong>Achievements &amp; Leaderboard</strong> — earn achievements for activity and compete with other travellers.</li>
     </ul>
 
-    <p>Works without registration. Supports login via Email, Google, and Apple. Available on iOS and Android.</p>
+    <p>Works without registration. Supports login via Email, Google, and Apple. Coming soon for iOS and Android.</p>
 
     <div class="btn-group">
-      <a href="#" class="btn"><i class="fab fa-apple"></i> App Store</a>
-      <a href="#" class="btn"><i class="fab fa-google-play"></i> Google Play</a>
+      <span class="btn-disabled en-label"><i class="fab fa-apple"></i> App Store</span>
+      <span class="btn-disabled en-label"><i class="fab fa-google-play"></i> Google Play</span>
     </div>
 
     <div class="btn-group">
