@@ -73,24 +73,24 @@
 
   <!-- Explore Cyprus -->
   <url>
-    <loc>https://moreman.games/explore-cyprus.html</loc>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://moreman.games/explore-cyprus.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://moreman.games/explore-cyprus.html"/>
+    <loc>https://moreman.games/cyprus-explore.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://moreman.games/cyprus-explore.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moreman.games/cyprus-explore.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://moreman.games/privacy-explore-cyprus.html</loc>
+    <loc>https://moreman.games/privacy-cyprus-explore.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://moreman.games/terms-explore-cyprus.html</loc>
+    <loc>https://moreman.games/terms-cyprus-explore.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://moreman.games/support-explore-cyprus.html</loc>
+    <loc>https://moreman.games/support-cyprus-explore.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
