@@ -121,6 +121,34 @@
       margin-bottom: 6px;
     }
 
+    .btn-disabled {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 10px 20px;
+      background-color: rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.4);
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      border: 1px dashed rgba(255,255,255,0.25);
+      cursor: not-allowed;
+      position: relative;
+    }
+    .btn-disabled::after {
+      content: 'скоро';
+      position: absolute;
+      top: -8px;
+      right: -4px;
+      background: #ffa500;
+      color: #000;
+      font-size: 0.6em;
+      font-weight: bold;
+      padding: 1px 5px;
+      border-radius: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
     footer {
       text-align: center;
       margin-top: 40px;
@@ -177,13 +205,13 @@
     <div class="container">
       <h1>Next Stop: Color!</h1>
 
+      <div class="cover">
+        <img src="images/newgame-cover.jpg" alt="Next Stop: Color! Обложка">
+      </div>
+
       <div class="coming-soon-banner">
         <div class="badge">Скоро</div><br>
         Игра находится в разработке и скоро появится в App Store и Google Play.
-      </div>
-
-      <div class="cover">
-        <img src="images/newgame-cover.jpg" alt="Next Stop: Color! Обложка">
       </div>
 
       <p>
@@ -205,6 +233,11 @@ Next Stop: Color! — это весёлая, красочная и молние�
       <div class="screenshots">
         <img src="images/nextstopcolor-screen1.png" alt="Скриншот 1">
         <img src="images/nextstopcolor-screen2.png" alt="Скриншот 2">
+      </div>
+
+      <div class="btn-group">
+        <span class="btn-disabled"><i class="fab fa-apple"></i> App Store</span>
+        <span class="btn-disabled"><i class="fab fa-google-play"></i> Google Play</span>
       </div>
 
       <div class="btn-group">
