@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cyprus Explore — Moreman Games</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cyprus Explore is a mobile guide to the best beaches and landmarks in Cyprus with maps, weather, reviews, and achievements.">
+  <link rel="canonical" href="https://moreman.games/en/cyprus-explore.html">
+  <link rel="alternate" hreflang="ru" href="https://moreman.games/cyprus-explore.html">
+  <link rel="alternate" hreflang="en" href="https://moreman.games/en/cyprus-explore.html">
+  <link rel="alternate" hreflang="x-default" href="https://moreman.games/en/cyprus-explore.html">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="/images/favicon.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('/images/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 40px 20px;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(20, 20, 20, 0.8);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      background: linear-gradient(to right, #ffd700, #ffa500);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.05em;
+      margin-bottom: 18px;
+    }
+
+    ul {
+      line-height: 1.7;
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    .btn-group {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 8px 5px;
+      padding: 10px 20px;
+      background-color: #00ffff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #00dddd;
+      transform: scale(1.05);
+    }
+
+    .coming-soon-banner {
+      background: linear-gradient(135deg, rgba(255,165,0,0.15), rgba(255,215,0,0.1));
+      border: 1px solid rgba(255,165,0,0.5);
+      border-radius: 12px;
+      padding: 14px 20px;
+      text-align: center;
+      margin-bottom: 24px;
+      font-size: 1em;
+    }
+
+    .coming-soon-banner .badge {
+      display: inline-block;
+      background: #ffa500;
+      color: #000;
+      font-weight: bold;
+      font-size: 0.75em;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 6px;
+    }
+
+    .btn-disabled {
+      display: inline-block;
+      margin: 8px 5px;
+      padding: 10px 20px;
+      background-color: rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.4);
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      border: 1px dashed rgba(255,255,255,0.25);
+      cursor: not-allowed;
+      position: relative;
+    }
+
+    .btn-disabled::after {
+      content: 'soon';
+      position: absolute;
+      top: -8px;
+      right: -4px;
+      background: #ffa500;
+      color: #000;
+      font-size: 0.6em;
+      font-weight: bold;
+      padding: 1px 5px;
+      border-radius: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #cccccc;
+    }
+
+    footer a {
+      color: #cccccc;
+      text-decoration: underline;
+    }
+
+    .lang-switch {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 9999;
+      background: rgba(0,0,0,0.5);
+      padding: 4px 6px;
+      border-radius: 8px;
+      backdrop-filter: blur(4px);
+    }
+
+    .lang-btn {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 4px;
+      font-weight: bold;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .lang-btn:hover { background: rgba(255,255,255,0.2); }
+    .lang-btn.active { background: #00ffff; color: #000; }
+
+    @media (max-width: 600px) {
+      .container { padding: 15px; }
+      h1 { font-size: 1.9em; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <a href="/cyprus-explore.html" class="lang-btn">RU</a>
+  <a href="/en/cyprus-explore.html" class="lang-btn active">EN</a>
+</div>
+
+<div class="overlay">
+<div class="container">
+
+  <div style="text-align:center; margin-bottom:16px;">
+    <img src="/images/cyprus-explore-splash.jpg" alt="Cyprus Explore" style="width:180px; border-radius:28px; box-shadow:0 8px 30px rgba(0,0,0,0.5);">
+  </div>
+  <h1>Cyprus Explore</h1>
+
+  <div class="coming-soon-banner">
+    <div class="badge">Coming Soon</div><br>
+    The app is currently in development and will be available on App Store and Google Play soon.
+  </div>
+
+  <p style="text-align:center; color:#ffa500; margin-top:0;">Your personal guide to Cyprus</p>
+
+  <p><strong>Cyprus Explore</strong> is a mobile app for discovering the best places in Cyprus. 100+ beaches and 100+ landmarks with detailed cards, an interactive map, real-time weather, and an achievement system. Available in three languages: English, Русский, Ελληνικά.</p>
+
+  <h2 style="color:#ffa500;">Key Features</h2>
+  <ul>
+    <li><strong>Cyprus Beaches</strong> — 100+ beaches with shore type, facilities (sun beds, shower, toilets, food, parking), Blue Flag, water sports, and children's playgrounds.</li>
+    <li><strong>Landmarks</strong> — 100+ sites: museums, castles, monasteries, churches, trails, nature parks, villages, viewpoints.</li>
+    <li><strong>Smart Filtering</strong> — 20+ parameters: type, city, rating, amenities, Blue Flag, parking, and more.</li>
+    <li><strong>Interactive Map</strong> — all places on OpenStreetMap with geolocation and distance to each spot.</li>
+    <li><strong>Weather &amp; Conditions</strong> — real-time: water &amp; air temperature, wind speed, wave height.</li>
+    <li><strong>Visit Verification</strong> — mark visited places; GPS auto-counts a visit within a 100 m radius.</li>
+    <li><strong>User Photos</strong> — upload photos with moderation and share your impressions.</li>
+    <li><strong>Reviews &amp; Ratings</strong> — leave reviews for beaches and landmarks.</li>
+    <li><strong>Favourites</strong> — save your favourite places for quick access.</li>
+    <li><strong>Achievements &amp; Leaderboard</strong> — earn achievements for activity and compete with other travellers.</li>
+  </ul>
+
+  <p>Works without registration. Supports login via Email, Google, and Apple. Coming soon for iOS and Android.</p>
+
+  <div class="btn-group">
+    <span class="btn-disabled"><i class="fab fa-apple"></i> App Store</span>
+    <span class="btn-disabled"><i class="fab fa-google-play"></i> Google Play</span>
+  </div>
+
+  <div class="btn-group">
+    <a href="/en/terms-cyprus-explore.html" class="btn">Terms of Use</a>
+    <a href="/en/privacy-cyprus-explore.html" class="btn">Privacy Policy</a>
+    <a href="/en/support-cyprus-explore.html" class="btn">Support</a>
+    <a href="/en/index.html" class="btn">Back to All Apps</a>
+  </div>
+
+  <footer>
+    <p>© 2026 Moreman Games — <a href="mailto:support@moreman.games">support@moreman.games</a></p>
+  </footer>
+
+</div>
+</div>
+
+</body>
+</html>

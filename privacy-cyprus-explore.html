@@ -7,7 +7,7 @@
   <meta name="description" content="Privacy Policy for Cyprus Explore mobile application.">
   <link rel="canonical" href="https://moreman.games/privacy-cyprus-explore.html">
   <link rel="alternate" hreflang="ru" href="https://moreman.games/privacy-cyprus-explore.html">
-  <link rel="alternate" hreflang="en" href="https://moreman.games/privacy-cyprus-explore.html">
+  <link rel="alternate" hreflang="en" href="https://moreman.games/en/privacy-cyprus-explore.html">
   <link rel="alternate" hreflang="x-default" href="https://moreman.games/privacy-cyprus-explore.html">
   <link rel="icon" href="images/favicon.png" type="image/png">
   <style>
@@ -75,8 +75,8 @@
 <body>
 
 <div class="lang-switch">
-  <button class="lang-btn active" id="btn-ru" onclick="setLang('ru')">RU</button>
-  <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+  <a href="/privacy-cyprus-explore.html" class="lang-btn active" id="btn-ru">RU</a>
+  <a href="/en/privacy-cyprus-explore.html" class="lang-btn" id="btn-en">EN</a>
 </div>
 
 <div class="overlay">
@@ -294,10 +294,8 @@
     document.getElementById('btn-en').classList.toggle('active', lang === 'en');
     document.getElementById('terms-link').textContent = lang === 'ru' ? 'Пользовательское соглашение' : 'Terms of Use';
     document.documentElement.lang = lang;
-    localStorage.setItem('ce-lang', lang);
   }
-  const saved = localStorage.getItem('ce-lang') || (navigator.language.startsWith('ru') ? 'ru' : 'en');
-  setLang(saved);
+  setLang('ru');
 </script>
 </body>
 </html>

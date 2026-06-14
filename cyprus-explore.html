@@ -7,7 +7,7 @@
   <meta name="description" content="Cyprus Explore — мобильный гид по пляжам и достопримечательностям Кипра. 100+ пляжей, 100+ объектов, карта, погода, отзывы.">
   <link rel="canonical" href="https://moreman.games/cyprus-explore.html">
   <link rel="alternate" hreflang="ru" href="https://moreman.games/cyprus-explore.html">
-  <link rel="alternate" hreflang="en" href="https://moreman.games/cyprus-explore.html">
+  <link rel="alternate" hreflang="en" href="https://moreman.games/en/cyprus-explore.html">
   <link rel="alternate" hreflang="x-default" href="https://moreman.games/cyprus-explore.html">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" href="images/favicon.png" type="image/png">
@@ -188,8 +188,8 @@
 <body>
 
 <div class="lang-switch">
-  <button class="lang-btn active" id="btn-ru" onclick="setLang('ru')">RU</button>
-  <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+  <a href="/cyprus-explore.html" class="lang-btn active" id="btn-ru">RU</a>
+  <a href="/en/cyprus-explore.html" class="lang-btn" id="btn-en">EN</a>
 </div>
 
 <div class="overlay">
@@ -296,13 +296,13 @@
     document.querySelectorAll('[data-lang]').forEach(el => {
       el.style.display = el.dataset.lang === lang ? 'block' : 'none';
     });
-    document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
-    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    const ruBtn = document.getElementById('btn-ru');
+    const enBtn = document.getElementById('btn-en');
+    if (ruBtn) ruBtn.classList.toggle('active', lang === 'ru');
+    if (enBtn) enBtn.classList.toggle('active', lang === 'en');
     document.documentElement.lang = lang;
-    localStorage.setItem('ce-lang', lang);
   }
-  const saved = localStorage.getItem('ce-lang') || (navigator.language.startsWith('ru') ? 'ru' : 'en');
-  setLang(saved);
+  setLang('ru');
 </script>
 
 </body>
