@@ -1,0 +1,25 @@
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #fff; background: url('/images/background.jpg') center / cover fixed; }
+.overlay { min-height: 100vh; padding: 40px 20px; background: rgba(0, 0, 0, .64); }
+.container { max-width: 860px; margin: 0 auto; padding: 30px; border-radius: 20px; background: rgba(20,20,20,.82); box-shadow: 0 0 15px rgba(0,0,0,.7); }
+h1 { margin: 0 0 20px; text-align: center; font-size: clamp(2rem, 6vw, 3rem); background: linear-gradient(90deg,#ffd700,#ffa500); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+h2 { margin-top: 28px; color: #ffa500; }
+p, li { font-size: 1.05rem; line-height: 1.6; }
+a { color: #00ffff; }
+.cover { max-width: 360px; margin: 0 auto 25px; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 28px rgba(0,0,0,.45); }
+.cover img { display: block; width: 100%; aspect-ratio: 2 / 3; object-fit: cover; }
+.coming-soon-banner, .note { margin: 22px 0; padding: 16px; text-align: center; border: 1px solid rgba(255,255,255,.12); border-radius: 12px; background: rgba(255,255,255,.07); }
+.badge { display: inline-block; padding: 3px 11px; border-radius: 12px; color: #000; font-weight: 800; text-transform: uppercase; letter-spacing: .5px; background: #ffa500; }
+.features { padding-left: 24px; }
+.screenshots { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 14px; margin: 28px 0; }
+.screenshots img { width: 100%; border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,.35); }
+.btn-group { margin-top: 28px; text-align: center; }
+.btn, .btn-disabled { display: inline-block; margin: 7px 4px; padding: 10px 18px; border-radius: 6px; color: #000; font-weight: 700; text-decoration: none; background: #00ffff; }
+.btn:hover { color: #000; background: #00dddd; }
+.btn-disabled { color: #999; background: #555; cursor: not-allowed; }
+.lang-switch { position: fixed; z-index: 2; top: 10px; right: 10px; padding: 4px 6px; border-radius: 8px; background: rgba(0,0,0,.5); }
+.lang-btn { margin: 0 4px; padding: 2px 6px; border-radius: 4px; color: #fff; font-weight: bold; text-decoration: none; }
+.lang-btn.active { color: #000; background: #00ffff; }
+footer { margin-top: 40px; text-align: center; color: #ccc; }
+@media (max-width: 600px) { .overlay { padding: 28px 12px; } .container { padding: 20px; } }

@@ -18,6 +18,64 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- Bukvoplet -->
+  <url>
+    <loc>https://moreman.games/bukvoplet.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://moreman.games/bukvoplet.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moreman.games/en/bukvoplet.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://moreman.games/en/bukvoplet.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://moreman.games/bukvoplet.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moreman.games/en/bukvoplet.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://moreman.games/privacy-bukvoplet.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://moreman.games/privacy-bukvoplet.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moreman.games/en/privacy-bukvoplet.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://moreman.games/en/privacy-bukvoplet.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://moreman.games/privacy-bukvoplet.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moreman.games/en/privacy-bukvoplet.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://moreman.games/terms-bukvoplet.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://moreman.games/terms-bukvoplet.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moreman.games/en/terms-bukvoplet.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://moreman.games/en/terms-bukvoplet.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://moreman.games/terms-bukvoplet.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moreman.games/en/terms-bukvoplet.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://moreman.games/support-bukvoplet.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://moreman.games/support-bukvoplet.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moreman.games/en/support-bukvoplet.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://moreman.games/en/support-bukvoplet.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://moreman.games/support-bukvoplet.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://moreman.games/en/support-bukvoplet.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
   <!-- TileShift -->
   <url>
     <loc>https://moreman.games/tileshift.html</loc>
